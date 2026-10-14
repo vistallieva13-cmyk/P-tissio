@@ -61,6 +61,41 @@ body{margin:0}
 .nav a.lnk{display:none}
 }
 html{scroll-behavior:smooth}
+.navr{display:flex;align-items:center;gap:8px}
+.btn.sm{min-height:42px;padding:0 20px;font-size:12px;margin-left:24px;cursor:pointer;background-clip:padding-box}
+button.btn{font-family:inherit;background:transparent}
+.dd{position:relative}
+.dd summary{list-style:none;cursor:pointer;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;margin-left:0}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::after{content:" ▾"}
+.ddm{position:absolute;top:36px;left:0;z-index:5;min-width:260px;background:#FBF7EF;border:1px solid #C9B48D;padding:20px;box-shadow:0 20px 40px rgba(20,33,61,.18)}
+.ddm b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#7A5C2E;margin:8px 0 6px}
+.ddm a{display:block;padding:6px 0;color:#14213D;text-decoration:none;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px}
+.ddm a.all{margin-top:10px;border-top:1px solid #D8C7A5;padding-top:12px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700}
+dialog{border:1px solid #B08D57;background:#FBF7EF;color:#14213D;padding:40px;max-width:400px;width:calc(100% - 48px);font-family:'DM Sans',sans-serif}
+dialog::backdrop{background:rgba(20,33,61,.6)}
+.tabs{display:flex;gap:24px;border-bottom:1px solid #C9B48D;margin-bottom:24px}
+.tabs button{background:none;border:0;padding:0 0 12px;font:600 26px 'Cormorant Garamond',Georgia,serif;color:#4A5470;cursor:pointer}
+.tabs button.on{color:#14213D;border-bottom:2px solid #B08D57}
+dialog label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:16px 0 6px}
+dialog input{width:100%;box-sizing:border-box;height:46px;border:1px solid #B9A57F;background:#fff;padding:0 12px;font:16px 'DM Sans',sans-serif;color:#14213D}
+dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
+#msg{margin-top:16px;font-size:14px;color:#7A5C2E}
+#sheet{display:none}
+@media print{
+.pg,dialog{display:none!important}
+#sheet{display:block;font-family:'DM Sans',Arial,sans-serif;color:#14213D;padding:0}
+#sheet h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;font-weight:600;margin:8px 0}
+#sheet .meta{border-top:2px solid #14213D;border-bottom:1px solid #B08D57;padding:10px 0;margin-bottom:20px;font-size:14px}
+#sheet .cols{display:grid;grid-template-columns:1fr 1.6fr;gap:32px}
+#sheet h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;margin:0 0 10px}
+#sheet li{margin-bottom:8px;font-size:14px}
+#sheet .tip{margin-top:24px;padding:14px;border:1px solid #B08D57;font-size:14px}
+#sheet .ft{margin-top:32px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-align:center}
+@page{margin:16mm}
+}
+@media (max-width:860px){.dd{display:none}.btn.sm{margin-left:8px}.rec{grid-template-columns:1fr!important}}
+
 </style>
 </head>
 <body>
@@ -68,7 +103,19 @@ html{scroll-behavior:smooth}
 <div class="wrap">
 <div class="nav">
 <span class="logo">Pâtissio</span>
-<span><a class="lnk" href="#parcours">Parcours</a><a class="lnk" href="#recettes">Recettes</a><a class="lnk" href="#fonctionnement">Comment ça marche</a></span>
+<span class="navr">
+<details class="dd"><summary>Idées recettes</summary><div class="ddm">
+<b>Amateurs</b>
+<a href="#recettes">Cookies moelleux</a>
+<a href="#recettes">Gâteau au yaourt</a>
+<b>Revisitées</b>
+<a href="#recettes">Éclair au yuzu</a>
+<a href="#recettes">Tarte citron déstructurée</a>
+<a class="all" href="#recettes">Toutes les fiches mémo →</a>
+</div></details>
+<a class="lnk" href="#parcours">Parcours</a>
+<span id="auth"><a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S'inscrire</a></span>
+</span>
 </div>
 
 <div class="hero">
@@ -116,12 +163,10 @@ html{scroll-behavior:smooth}
 </div>
 
 <div class="wrap sec" id="recettes">
-<h2 class="t">Un avant-goût de ce qui t'attend</h2>
-<div class="rec">
-<div class="rc"><div class="ph" style="background:#D8C3A0"></div><div class="bd"><span class="tag">Amateur</span><h3>Cookies moelleux</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
-<div class="rc"><div class="ph" style="background:#14213D"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Éclair revisité</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
-<div class="rc"><div class="ph" style="background:#E7DAC3"></div><div class="bd"><span class="tag">Amateur</span><h3>Gâteau au yaourt</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
-</div>
+<p class="eyebrow">Idées recettes</p>
+<h2 class="t">Des fiches mémo à imprimer</h2>
+<p class="sub">Clique sur « Fiche mémo PDF » : la fiche s'ouvre prête à imprimer, ou à enregistrer en PDF depuis la fenêtre d'impression.</p>
+<div class="rec" style="grid-template-columns:repeat(2,1fr)"><div class="rc"><div class="ph" style="background:#D8C3A0"></div><div class="bd"><span class="tag ">Amateur</span><h3>Cookies moelleux</h3><p>30 min · Facile</p><p style="margin-top:8px;color:#4A5470">Dorés autour, tendres au centre, avec de vrais morceaux de chocolat.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="cookies">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#E7DAC3"></div><div class="bd"><span class="tag ">Amateur</span><h3>Gâteau au yaourt</h3><p>45 min · Très facile</p><p style="margin-top:8px;color:#4A5470">Le classique de l'enfance, qui se mesure avec le pot de yaourt.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="yaourt">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#14213D"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Éclair au yuzu</h3><p>2 h · Confirmé</p><p style="margin-top:8px;color:#4A5470">Pâte à choux et crème acidulée au yuzu, glaçage brillant.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="eclair">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#B9A57F"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Tarte citron déstructurée</h3><p>2 h 30 · Confirmé</p><p style="margin-top:8px;color:#4A5470">Sablé en éclats, crème citron et meringues croquantes.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="tarte">Fiche mémo PDF</button></div></div></div>
 </div>
 
 <div class="wrap sec">
@@ -153,5 +198,30 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 
+<dialog id="dlg">
+<div class="tabs"><button class="on" data-tab="login">Connexion</button><button data-tab="signup">Inscription</button></div>
+<form id="form">
+<div id="nm" hidden><label for="n">Prénom</label><input id="n" autocomplete="given-name"></div>
+<label for="e">E-mail</label><input id="e" type="email" required autocomplete="email">
+<label for="p">Mot de passe</label><input id="p" type="password" required minlength="6" autocomplete="current-password">
+<button class="btn b1" id="go">Se connecter</button>
+<p id="msg"></p>
+</form>
+</dialog>
+<div id="sheet"></div>
+<script>
+const R={
+cookies:{t:"Cookies moelleux",m:"Préparation 15 min · Cuisson 12 min · 12 cookies",i:["125 g de beurre mou","100 g de sucre roux","50 g de sucre blanc","1 œuf","1 c. à c. d'extrait de vanille","220 g de farine","5 g de levure chimique","1 pincée de sel","150 g de pépites de chocolat"],s:["Préchauffer le four à 180 °C.","Crémer le beurre avec les deux sucres, puis ajouter l'œuf et la vanille.","Incorporer la farine, la levure et le sel, puis les pépites de chocolat.","Former 12 boules sur une plaque, bien espacées.","Cuire 10 à 12 minutes : le centre doit rester tendre.","Laisser reposer 5 minutes avant de déplacer."],a:"Une pause de 30 minutes au frais avant cuisson donne des cookies plus épais."},
+yaourt:{t:"Gâteau au yaourt",m:"Préparation 10 min · Cuisson 35 min · 6 parts",i:["1 pot de yaourt nature (sert de mesure)","2 pots de sucre","3 pots de farine","½ pot d'huile neutre","3 œufs","1 sachet de levure chimique (11 g)","Le zeste d'un citron (facultatif)"],s:["Préchauffer le four à 180 °C et beurrer un moule.","Mélanger le yaourt, le sucre et les œufs, puis l'huile.","Ajouter la farine et la levure, et le zeste si souhaité.","Verser dans le moule.","Cuire environ 35 minutes : une lame doit ressortir sèche."],a:"Remplace le citron par de la vanille ou des pépites de chocolat."},
+eclair:{t:"Éclair au yuzu",m:"Préparation 1 h · Cuisson 35 min · 8 éclairs",i:["Pâte à choux : 125 ml d'eau, 125 ml de lait, 100 g de beurre, 5 g de sucre, 1 pincée de sel, 150 g de farine, 4 œufs","Crème yuzu : 80 ml de jus de yuzu, 80 g de sucre, 2 œufs, 100 g de beurre froid en dés","Glaçage : 150 g de sucre glace, 2 c. à s. de jus de yuzu"],s:["Choux : porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 minutes.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm et cuire à 190 °C pendant 30 à 35 minutes, sans ouvrir le four les 20 premières minutes.","Crème : chauffer jus, sucre et œufs au bain-marie en fouettant jusqu'à épaississement. Hors du feu, ajouter le beurre et mixer. Refroidir.","Garnir les éclairs, puis les glacer."],a:"Pas de yuzu ? Un mélange de citron et de mandarine s'en approche."},
+tarte:{t:"Tarte citron déstructurée",m:"Préparation 1 h 30 · Cuisson 1 h 30 · 6 personnes",i:["Sablé : 100 g de beurre, 80 g de sucre, 2 jaunes, 140 g de farine, 6 g de levure","Crème : 100 ml de jus de citron, 100 g de sucre, 3 œufs, 120 g de beurre","Meringues : 2 blancs d'œufs, 100 g de sucre","Zestes de citron pour le dressage"],s:["Sablé : mélanger les ingrédients, étaler et cuire 18 minutes à 170 °C. Émietter une fois refroidi.","Crème : cuire jus, sucre et œufs au bain-marie jusqu'à épaississement, ajouter le beurre, mixer et refroidir.","Meringues : monter les blancs en ajoutant le sucre en trois fois, pocher des pointes, cuire 1 h 30 à 90 °C.","Dresser dans l'assiette : éclats de sablé, crème, meringues et zestes."],a:"Dresse au dernier moment pour garder les meringues croquantes."}};
+const $=q=>document.querySelector(q),dlg=$('#dlg');let mode='login';
+function setMode(m){mode=m;document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('on',b.dataset.tab==m));$('#nm').hidden=m!='signup';$('#go').textContent=m=='signup'?"Créer mon compte":"Se connecter";$('#msg').textContent='';}
+document.querySelectorAll('[data-auth]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();setMode(a.dataset.auth);dlg.showModal();}));
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.tab)));
+dlg.addEventListener('click',e=>{if(e.target==dlg)dlg.close()});
+$('#form').addEventListener('submit',e=>{e.preventDefault();const n=$('#n').value||$('#e').value.split('@')[0];$('#auth').innerHTML='<span style="margin-left:24px;font-size:14px">Bonjour, '+n.replace(/[<>&]/g,'')+'</span>';dlg.close();});
+document.querySelectorAll('[data-sheet]').forEach(b=>b.addEventListener('click',()=>{const r=R[b.dataset.sheet];$('#sheet').innerHTML='<div class="ft" style="margin:0 0 8px">Pâtissio · Fiche mémo</div><h1>'+r.t+'</h1><div class="meta">'+r.m+'</div><div class="cols"><div><h2>Ingrédients</h2><ul>'+r.i.map(x=>'<li>'+x+'</li>').join('')+'</ul></div><div><h2>Préparation</h2><ol>'+r.s.map(x=>'<li>'+x+'</li>').join('')+'</ol></div></div><div class="tip"><b>Astuce :</b> '+r.a+'</div><div class="ft">Pâtissio</div>';window.print();}));
+</script>
 </body>
 </html>
