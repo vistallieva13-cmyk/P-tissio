@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pâtissio – Recettes de pâtisserie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.pg{font-family:'DM Sans',Arial,sans-serif;color:#14213D;background:#F3EBDD;line-height:1.6}
+.pg h1,.pg h2,.pg h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.05;letter-spacing:-0.01em}
+.pg p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0;gap:16px;border-bottom:1px solid #C9B48D}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:26px;letter-spacing:.28em;text-transform:uppercase;color:#14213D}
+.nav a.lnk{color:#14213D;text-decoration:none;font-weight:500;margin-left:32px;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:#7A5C2E;margin-bottom:20px;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 32px;border-radius:2px;font-weight:700;text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.b1{background:#14213D;color:#F3EBDD}
+.b2{border:1px solid #14213D;color:#14213D}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;padding:80px 0 112px}
+.hero h1{font-size:84px;font-weight:500}
+.hero h1 em{font-style:italic;color:#7A5C2E}
+.sub{font-size:19px;margin-top:28px;max-width:520px;color:#2A3652}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+.phone{background:#FBF7EF;border:8px solid #14213D;border-radius:36px;padding:16px;box-shadow:0 30px 60px rgba(20,33,61,.25);max-width:340px;margin:0 auto}
+.shot{border-radius:20px;background:#E7DAC3;height:240px;display:flex;align-items:center;justify-content:center}
+.tart{width:170px;height:170px;border-radius:50%;background:#14213D;display:flex;align-items:center;justify-content:center}
+.tart i{width:116px;height:116px;border-radius:50%;background:#E7DAC3;display:block;position:relative}
+.tart i b{position:absolute;width:22px;height:22px;border-radius:50%;background:#B08D57;top:47px;left:47px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;border:1px solid #14213D;color:#14213D;margin-right:6px}
+.tag.r{background:#14213D;color:#E8D3A8}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{border-radius:2px;padding:48px}
+.card h2{font-size:42px;margin-bottom:16px}
+.card ul{margin:24px 0 0;padding-left:20px}
+.card li{margin-bottom:8px}
+.sec{padding:112px 0 0}
+.sec h2.t{font-size:54px;font-weight:500;max-width:680px}
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:48px}
+.feat div{border-top:1px solid #B08D57;padding-top:20px}
+.feat h3{font-size:28px;margin-bottom:8px}
+.rec{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.rc{background:#FBF7EF;border:1px solid #D8C7A5;overflow:hidden}
+.rc .ph{height:170px}
+.rc .bd{padding:28px}
+.rc h3{font-size:28px;margin:14px 0 6px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+.num{width:52px;height:52px;border-radius:50%;border:1px solid #B08D57;color:#14213D;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:28px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.final{margin-top:112px;background:#14213D;color:#F3EBDD;border-radius:2px;padding:80px 40px;text-align:center;outline:1px solid #B08D57;outline-offset:-12px}
+.final h2{font-size:60px;font-weight:500}
+.final p{margin:20px auto 36px;max-width:520px;color:#D9CBB0}
+.foot{margin-top:64px;border-top:1px solid #C9B48D;padding:32px 0 40px;color:#4A5470;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media (max-width:860px){
+.hero{grid-template-columns:1fr;padding:48px 0 64px}
+.hero h1{font-size:52px}
+.paths,.rec,.steps{grid-template-columns:1fr}
+.feat{grid-template-columns:1fr 1fr}
+.sec h2.t,.final h2{font-size:38px}
+.nav a.lnk{display:none}
+}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div class="pg">
+<div class="wrap">
+<div class="nav">
+<span class="logo">Pâtissio</span>
+<span><a class="lnk" href="#parcours">Parcours</a><a class="lnk" href="#recettes">Recettes</a><a class="lnk" href="#fonctionnement">Comment ça marche</a></span>
+</div>
+
+<div class="hero">
+<div>
+<p class="eyebrow">L'art de la pâtisserie</p>
+<h1>La pâtisserie, <em>classique</em> ou <em>revisitée</em>.</h1>
+<p class="sub">Des recettes pensées pour les amateurs, pas à pas. Et quand tu as pris confiance, des versions revisitées pour surprendre tout le monde.</p>
+<div class="ctas">
+<a class="btn b1" href="#telecharger">Télécharger l'appli</a>
+<a class="btn b2" href="#recettes">Voir des recettes</a>
+</div>
+</div>
+<div class="phone">
+<div class="shot"><div class="tart"><i><b></b></i></div></div>
+<div style="padding:20px 8px 8px">
+<span class="tag">Amateur</span><span class="tag r">Revisitée</span>
+<h3 style="font-size:32px;margin-top:14px">Tarte au citron</h3>
+<p style="margin-top:6px;color:#4A5470">Version classique ou déstructurée, à toi de choisir.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wrap" id="parcours">
+<div class="paths">
+<div class="card" style="background:#E7DAC3;color:#14213D">
+<h2>Pour les amateurs</h2>
+<p>Pas besoin de matériel de pro ni d'années d'expérience. Chaque recette te guide du premier geste jusqu'au dressage.</p>
+<ul>
+<li>Ingrédients simples, faciles à trouver</li>
+<li>Étapes courtes avec minuteurs</li>
+<li>Astuces pour rattraper les ratés</li>
+</ul>
+</div>
+<div class="card" style="background:#14213D;color:#F3EBDD">
+<h2 style="color:#D9BC87">Les recettes revisitées</h2>
+<p>Les grands classiques réinventés : nouvelles saveurs, textures inattendues, présentations qui font de l'effet.</p>
+<ul>
+<li>Associations de saveurs originales</li>
+<li>Techniques expliquées simplement</li>
+<li>Idées pour faire sa propre variante</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="wrap sec" id="recettes">
+<h2 class="t">Un avant-goût de ce qui t'attend</h2>
+<div class="rec">
+<div class="rc"><div class="ph" style="background:#D8C3A0"></div><div class="bd"><span class="tag">Amateur</span><h3>Cookies moelleux</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
+<div class="rc"><div class="ph" style="background:#14213D"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Éclair revisité</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
+<div class="rc"><div class="ph" style="background:#E7DAC3"></div><div class="bd"><span class="tag">Amateur</span><h3>Gâteau au yaourt</h3><p>[DURÉE] · [NIVEAU]</p></div></div>
+</div>
+</div>
+
+<div class="wrap sec">
+<h2 class="t">Tout pour réussir, même le jour J</h2>
+<div class="feat">
+<div><h3>Pas à pas</h3><p>Des étapes claires, une à la fois, mains dans la farine.</p></div>
+<div><h3>Deux univers</h3><p>Passe des recettes simples aux revisitées quand tu veux.</p></div>
+<div><h3>Idées du moment</h3><p>Des inspirations selon la saison et l'occasion.</p></div>
+<div><h3>Tes favoris</h3><p>Garde tes recettes préférées et retrouve-les en un geste.</p></div>
+</div>
+</div>
+
+<div class="wrap sec" id="fonctionnement">
+<h2 class="t">Comment ça marche</h2>
+<div class="steps">
+<div><div class="num">1</div><h3 style="font-size:30px;margin-bottom:8px">Choisis ton envie</h3><p>Un gâteau d'anniversaire, un goûter, un dessert chic.</p></div>
+<div><div class="num">2</div><h3 style="font-size:30px;margin-bottom:8px">Suis la recette</h3><p>Liste de courses, étapes et minuteurs intégrés.</p></div>
+<div><div class="num">3</div><h3 style="font-size:30px;margin-bottom:8px">Régale-toi, puis revisite</h3><p>Tente la version revisitée de ta recette préférée.</p></div>
+</div>
+</div>
+
+<div class="wrap" id="telecharger">
+<div class="final">
+<h2>Prêt à passer au four ?</h2>
+<p>Rejoins Pâtissio et prépare ta prochaine pâtisserie dès aujourd'hui.</p>
+<a class="btn b1" style="background:#D9BC87;color:#14213D" href="#">Télécharger l'appli</a>
+</div>
+<div class="foot"><span>© Pâtissio</span><span>[CONTACT / RÉSEAUX]</span></div>
+</div>
+</div>
+
+</body>
+</html>
