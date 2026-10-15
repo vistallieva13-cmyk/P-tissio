@@ -249,6 +249,56 @@ dialog{border-radius:22px}
 @media (max-width:860px){.pg .ctitle{font-size:46px}.cgrid{grid-template-columns:1fr 1fr;gap:48px 16px}.pg .ci h3{font-size:16px}.pg .fh{font-size:38px}.fcols,.atg{grid-template-columns:1fr}#cq{min-width:0;width:100%}}
 .tiles{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))!important}
 
+.pg{padding-bottom:88px}
+.hdr{position:absolute;top:0;left:0;right:0;margin:0 auto;max-width:1120px;z-index:6;display:flex;align-items:center;justify-content:space-between;padding:calc(18px + env(safe-area-inset-top)) 22px 0}
+body[data-v=home] .hdr{max-width:720px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#3A2419}
+.brand svg{width:30px;height:30px;fill:none;stroke:#A87C3A;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.brand span{font:600 15px 'Cormorant Garamond',Georgia,serif;letter-spacing:.3em;text-transform:uppercase}
+.prof{width:42px;height:42px;border-radius:50%;border:1px solid rgba(58,36,25,.45);background:rgba(255,250,242,.45);backdrop-filter:blur(6px);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#3A2419}
+.prof svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round}
+.v.on{animation:vin .45s ease both}
+@keyframes vin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.v.on{animation:none}.cd,.insp{transition:none!important}}
+#home{max-width:720px;margin:0 auto}
+.hero{position:relative;height:min(76vh,640px);min-height:520px;overflow:hidden;background:#E3CDAA}
+.hbg,.hbg svg{width:100%;height:100%;display:block}
+.has-boutique .hbg{background:url(photo-boutique.jpg) center/cover}
+.has-boutique .hbg svg{display:none}
+.hov{position:absolute;left:26px;top:27%}
+.pg .hphrase{font:italic 500 40px 'Cormorant Garamond',Georgia,serif;line-height:1.08;color:#3A2419;text-shadow:0 1px 12px rgba(255,244,222,.8)}
+.hline{display:block;width:34px;height:1px;background:#8A5A2B;margin-top:16px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-92px 14px 0;position:relative;z-index:3}
+.cd{display:flex;flex-direction:column;align-items:center;text-align:center;text-decoration:none;color:#3A2419;background:rgba(255,251,244,.88);backdrop-filter:blur(10px);border:1px solid rgba(176,122,60,.35);border-radius:22px;padding:20px 8px 14px;box-shadow:0 12px 30px rgba(58,36,25,.14);transition:transform .35s ease,box-shadow .35s ease}
+.cd:hover,.cd:active{transform:translateY(-4px);box-shadow:0 18px 36px rgba(58,36,25,.2)}
+.cd svg{width:34px;height:34px;fill:none;stroke:#8A5A2B;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.pg .cd h3{font:600 15px 'Cormorant Garamond',Georgia,serif;letter-spacing:.1em;text-transform:uppercase;margin:10px 0 4px}
+.pg .cd p{font:italic 500 14px 'Cormorant Garamond',Georgia,serif;color:#6B5546;line-height:1.2}
+.cd i{font-style:normal;color:#8A5A2B;margin-top:10px}
+.insp{display:flex;align-items:center;gap:14px;margin:20px 14px 0;background:linear-gradient(100deg,#F8E8E4,#EFD4D0);border:1px solid rgba(176,122,60,.28);border-radius:22px;padding:14px 16px;text-decoration:none;color:#3A2419;transition:transform .35s ease}
+.insp:hover{transform:translateY(-3px)}
+.insp .iv{width:34%;max-width:180px;flex:none}.insp .iv svg{width:100%;height:auto;display:block}
+.insp .it{flex:1}
+.pg .insp .eb{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8A5A2B}
+.pg .insp h3{font:italic 500 28px 'Cormorant Garamond',Georgia,serif;margin:4px 0}
+.pg .insp .ds{font:500 15px 'Cormorant Garamond',Georgia,serif;color:#5A4336}
+.insp .ia{width:40px;height:40px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;flex:none;color:#3A2419}
+.bnav{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-around;align-items:flex-end;padding:8px 6px calc(8px + env(safe-area-inset-bottom));background:rgba(250,244,234,.93);backdrop-filter:blur(12px);border-top:1px solid #E6D6BC}
+.bnav a{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;color:#8A6A55;min-width:56px;transition:transform .25s}
+.bnav a:active{transform:scale(.94)}
+.bnav svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.bnav span{font:600 13px 'Cormorant Garamond',Georgia,serif}
+.bnav a.on{color:#3A2419}.bnav a.on svg{fill:rgba(176,122,60,.28)}
+.bnav .cr b{width:48px;height:48px;border-radius:50%;background:#7A4B2E;color:#FAF4EA;display:flex;align-items:center;justify-content:center;margin-top:-20px;box-shadow:0 8px 18px rgba(58,36,25,.3);border:3px solid #FAF4EA}
+.bnav .cr svg{stroke:#FAF4EA;width:22px;height:22px;fill:none!important}
+.soon{list-style:none;margin:28px 0 0;padding:0;max-width:640px}
+.soon li{display:flex;justify-content:space-between;padding:16px 0;border-bottom:1px solid #E6D6BC;font:600 22px 'Cormorant Garamond',Georgia,serif}
+.soon span{font:500 12px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8A5A2B;align-self:center}
+.favmsg{color:#6B5546;max-width:520px}
+.favmsg .btn{margin-top:16px;cursor:pointer}
+@media (max-width:860px){.sec{padding-top:96px}.pg .hphrase{font-size:36px}.cards{margin:-80px 12px 0}.pg .cd p{font-size:13px}.pg .insp h3{font-size:24px}}
+
+.hero{display:block!important;padding:0!important}
 </style>
 </head>
 <body>
@@ -262,55 +312,30 @@ dialog{border-radius:22px}
 <a href="#fiches" data-go="fiches">Fiches mémo</a>
 <div class="mauth" id="auth"><a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S'inscrire</a></div>
 </nav></div>
-<div class="wrap">
-<div class="nav">
-<span class="logo" data-go="home" style="cursor:pointer">Pâtissio</span>
-<button class="btn b2 sm menubtn" id="menubtn" aria-label="Ouvrir le menu">Menu ☰</button>
+<header class="hdr">
+<a class="brand" href="#home" data-go="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c2 3 2 6 0 9-2-3-2-6 0-9zM12 12c-2 0-5-1-6-4 3 0 5 1 6 4zM12 12c2 0 5-1 6-4-3 0-5 1-6 4zM12 12v8M8 20h8"/></svg><span>Atelier Pâtisserie</span></a>
+<button class="prof" id="menubtn" aria-label="Profil et menu"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg></button>
+</header>
+<div class="v v-home on" id="home">
+<section class="hero"><div class="hbg" id="hbg"></div><div class="hov"><p class="hphrase">L'art de la pâtisserie,<br>chez vous.</p><span class="hline"></span></div></section>
+<div class="cards">
+<a class="cd" href="#collection" data-go="collection"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 11V9M10.5 9h3"/></svg><h3>Découvrir</h3><p>Des recettes d'exception</p><i>→</i></a>
+<a class="cd" href="#studio" data-go="studio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 10l7-7M5 19c-2-2 0-9 5-10 4 0 6 2 6 6-1 5-8 7-11 4zM8 16l6-6M6 13l5-5"/></svg><h3>Créer</h3><p>Votre propre pâtisserie</p><i>→</i></a>
+<a class="cd" href="#apprendre" data-go="apprendre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v13M3 5c3-1 6-1 9 1 3-2 6-2 9-1v13c-3-1-6-1-9 1-3-2-6-2-9-1z"/></svg><h3>Apprendre</h3><p>Techniques et conseils</p><i>→</i></a>
 </div>
-<div class="v v-home on">
-<div class="hero">
-<div>
-<p class="eyebrow">L'art de la pâtisserie</p>
-<h1>La pâtisserie, <em>classique</em> ou <em>revisitée</em>.</h1>
-<p class="sub">Des recettes pensées pour les amateurs, pas à pas. Et quand tu as pris confiance, des versions revisitées pour surprendre tout le monde.</p>
-<div class="ctas">
-<a class="btn b1" href="#studio" data-go="studio">Créer ma pâtisserie</a>
-<a class="btn b2" href="#fiches" data-go="fiches">Fiches mémo</a>
+<div id="insp"></div>
 </div>
-</div>
-<div class="phone">
-<div class="shot"><div class="tart"><i><b></b></i></div></div>
-<div style="padding:20px 8px 8px">
-<span class="tag">Amateur</span><span class="tag r">Revisitée</span>
-<h3 style="font-size:32px;margin-top:14px">Tarte au citron</h3>
-<p style="margin-top:6px;color:#6B5546">Version classique ou déstructurée, à toi de choisir.</p>
-</div>
-</div>
-</div>
-</div></div>
-
-<div class="wrap v v-home on" id="parcours">
-<div class="paths">
-<div class="card" style="background:#EEDFC6;color:#3A2419">
-<h2>Pour les amateurs</h2>
-<p>Pas besoin de matériel de pro ni d'années d'expérience. Chaque recette te guide du premier geste jusqu'au dressage.</p>
-<ul>
-<li>Ingrédients simples, faciles à trouver</li>
-<li>Étapes courtes avec minuteurs</li>
-<li>Astuces pour rattraper les ratés</li>
-</ul>
-</div>
-<div class="card" style="background:#3A2419;color:#FAF4EA">
-<h2 style="color:#E2BE8A">Les recettes revisitées</h2>
-<p>Les grands classiques réinventés : nouvelles saveurs, textures inattendues, présentations qui font de l'effet.</p>
-<ul>
-<li>Associations de saveurs originales</li>
-<li>Techniques expliquées simplement</li>
-<li>Idées pour faire sa propre variante</li>
-</ul>
-</div>
-</div>
-</div>
+<div class="wrap sec v v-apprendre" id="apprendre"><h2 class="ctitle">Apprendre</h2><p class="csub">Un espace pour maîtriser les gestes de la pâtisserie.</p>
+<span class="badge">Espace en construction · bientôt disponible</span>
+<ul class="soon"><li><b>Techniques de pâtisserie</b><span>À venir</span></li><li><b>Conseils de préparation</b><span>À venir</span></li><li><b>Les ingrédients expliqués</b><span>À venir</span></li><li><b>Montage et décoration</b><span>À venir</span></li><li><b>Astuces pour réussir</b><span>À venir</span></li></ul></div>
+<div class="wrap sec v v-favoris" id="favoris"><h2 class="ctitle">Mes favoris</h2><div id="favbox"></div></div>
+<nav class="bnav" aria-label="Navigation principale">
+<a href="#home" data-go="home" data-t="home"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg><span>Accueil</span></a>
+<a href="#collection" data-go="collection" data-t="collection"><svg viewBox="0 0 24 24"><path d="M5 20h14M6 20v-6h12v6M8 14v-3h8v3M12 11V8M11 8h2"/></svg><span>Recettes</span></a>
+<a href="#studio" data-go="studio" data-t="studio" class="cr"><b><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></b><span>Créer</span></a>
+<a href="#apprendre" data-go="apprendre" data-t="apprendre"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c3 2 9 2 12 0v-5"/></svg><span>Apprendre</span></a>
+<a href="#favoris" data-go="favoris" data-t="favoris"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.500-7 10-7 10z"/></svg><span>Favoris</span></a>
+</nav>
 
 <div class="wrap sec v v-studio" id="studio">
 <div class="st">
@@ -332,68 +357,13 @@ dialog{border-radius:22px}
 <div class="rec" style="grid-template-columns:repeat(2,1fr)"><div class="rc"><div class="ph ph-cookies" style="background:#E0C49A"></div><div class="bd"><span class="tag ">Amateur</span><h3>Cookies moelleux</h3><p>30 min · Facile</p><p style="margin-top:8px;color:#6B5546">Dorés autour, tendres au centre, avec de vrais morceaux de chocolat.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="cookies">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph ph-yaourt" style="background:#EEDFC6"></div><div class="bd"><span class="tag ">Amateur</span><h3>Gâteau au yaourt</h3><p>45 min · Très facile</p><p style="margin-top:8px;color:#6B5546">Le classique de l'enfance, qui se mesure avec le pot de yaourt.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="yaourt">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph ph-eclair" style="background:#3A2419"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Éclair au yuzu</h3><p>2 h · Confirmé</p><p style="margin-top:8px;color:#6B5546">Pâte à choux et crème acidulée au yuzu, glaçage brillant.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="eclair">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph ph-tarte" style="background:#C9A97A"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Tarte citron déstructurée</h3><p>2 h 30 · Confirmé</p><p style="margin-top:8px;color:#6B5546">Sablé en éclats, crème citron et meringues croquantes.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="tarte">Fiche mémo PDF</button></div></div></div>
 </div>
 
-<div class="wrap sec v v-home on">
-<h2 class="t" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:54px;font-weight:500;margin:0 0 40px">Que veux-tu faire ?</h2>
-<div class="tiles">
-<a class="tile" href="#collection" data-go="collection"><span class="ic2">🍰</span><h3>La collection</h3><p>Parcours des pâtisseries en coupe, puis réalise-les ou réinvente-les.</p></a>
-<a class="tile" href="#studio" data-go="studio"><span class="ic2">🧁</span><h3>Créer une recette</h3><p>Réponds à quelques questions : l'assistant te propose une pâtisserie.</p></a>
-<a class="tile" href="#fiches" data-go="fiches"><span class="ic2">📄</span><h3>Fiches mémo</h3><p>Des recettes à imprimer ou à enregistrer en PDF.</p></a>
-</div>
-</div>
-
-<div class="wrap sec v v-home on">
-<h2 class="t">Tout pour réussir, même le jour J</h2>
-<div class="feat">
-<div><h3>Pas à pas</h3><p>Des étapes claires, une à la fois, mains dans la farine.</p></div>
-<div><h3>Deux univers</h3><p>Passe des recettes simples aux revisitées quand tu veux.</p></div>
-<div><h3>Idées du moment</h3><p>Des inspirations selon la saison et l'occasion.</p></div>
-<div><h3>Tes favoris</h3><p>Garde tes recettes préférées et retrouve-les en un geste.</p></div>
-</div>
-</div>
-
-<div class="wrap sec v v-home on" id="fonctionnement">
-<h2 class="t">Comment ça marche</h2>
-<div class="steps">
-<div><div class="num">1</div><h3 style="font-size:30px;margin-bottom:8px">Choisis ton envie</h3><p>Un gâteau d'anniversaire, un goûter, un dessert chic.</p></div>
-<div><div class="num">2</div><h3 style="font-size:30px;margin-bottom:8px">Suis la recette</h3><p>Liste de courses, étapes et minuteurs intégrés.</p></div>
-<div><div class="num">3</div><h3 style="font-size:30px;margin-bottom:8px">Régale-toi, puis revisite</h3><p>Tente la version revisitée de ta recette préférée.</p></div>
-</div>
-</div>
-
-<div class="wrap v v-home on" id="telecharger">
-<div class="final">
-<h2>Prêt à passer au four ?</h2>
-<p>Crée ton compte pour retrouver tes créations.</p>
-<a class="btn b1" style="background:#E2BE8A;color:#3A2419" href="#" data-auth="signup">Créer mon compte</a>
-</div>
-</div>
 <div class="wrap">
-<div class="foot"><span>© Pâtissio</span><span>[CONTACT / RÉSEAUX]</span></div>
+<div class="foot"><span>© Atelier Pâtisserie</span><span>Version de démonstration</span></div>
 </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
-<script type="application/json" id="pdata">{"v":1,"statut":"demo","items":[
-{"slug":"tarte-citron","name":"Tarte au citron","cat":"classique","s":["citron"],"desc":"Un sablé fin, une crème citron franche et une meringue légèrement dorée.","portions":6,"diff":2,"prep":60,"rest":180,"cook":20,"temp":180,"shape":"tarte","top":"meringue","layers":[{"t":"sucree","h":20},{"t":"creme_citron","h":46}],
-"comps":[{"n":"Pâte sucrée","i":[["farine",250,"g"],["beurre",125,"g"],["sucre glace",90,"g"],["œuf",1,""],["sel",1,"pincée"]]},{"n":"Crème au citron","i":[["jus de citron",120,"ml"],["zeste de citron",2,"citrons"],["sucre",120,"g"],["œufs",3,""],["beurre",150,"g"]]},{"n":"Meringue","i":[["blancs d'œufs",3,""],["sucre",150,"g"]]}],
-"steps":["Mélanger farine, sucre glace, sel et beurre froid en dés jusqu'à obtenir un sable, puis ajouter l'œuf. Former une boule et la laisser 1 h au frais.","Étaler la pâte, foncer un cercle de 22 cm et piquer le fond. Cuire à blanc 20 min à 180 °C.","Fouetter jus, zestes, sucre et œufs au bain-marie jusqu'à 82 °C.","Laisser tiédir à 40 °C, ajouter le beurre en dés et mixer. Verser dans le fond de tarte et laisser prendre 2 h au frais.","Monter les blancs en ajoutant le sucre en trois fois. Pocher sur la tarte et colorer au chalumeau."]},
-{"slug":"eclair-chocolat","name":"Éclair au chocolat","cat":"classique","s":["chocolat"],"desc":"Une pâte à choux croustillante, une crème pâtissière au chocolat noir et un glaçage brillant.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","layers":[{"t":"choux","h":14},{"t":"creme_choc","h":38},{"t":"choux","h":16,"lock":true}],
-"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème pâtissière au chocolat","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["chocolat noir",150,"g"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],
-"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : fouetter jaunes, sucre et fécule, verser le lait bouillant et recuire en fouettant 2 min. Hors du feu, ajouter le chocolat. Filmer au contact et refroidir.","Garnir les éclairs. Verser la crème chaude sur le chocolat, lisser, puis glacer."]},
-{"slug":"eclair-yuzu","name":"Éclair au yuzu","cat":"revisitee","s":["yuzu","agrumes"],"desc":"Le classique réinventé avec une crème acidulée au yuzu et un glaçage pâle.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","tc":"#F2E5A6","layers":[{"t":"choux","h":14},{"t":"creme_yuzu","h":38},{"t":"choux","h":16,"lock":true}],
-"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème au yuzu","i":[["jus de yuzu",80,"ml"],["sucre",80,"g"],["œufs",2,""],["beurre",100,"g"]]},{"n":"Glaçage","i":[["sucre glace",150,"g"],["jus de yuzu",30,"ml"]]}],
-"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : chauffer jus, sucre et œufs au bain-marie en fouettant jusqu'à épaississement. Hors du feu, ajouter le beurre froid et mixer. Refroidir.","Garnir les éclairs, puis les glacer avec sucre glace et jus de yuzu."]},
-{"slug":"paris-brest-pistache","name":"Paris-Brest pistache framboise","cat":"revisitee","s":["pistache","framboise"],"desc":"La couronne de choux, une crème mousseline à la pistache et un cœur de framboise.","portions":6,"diff":3,"prep":90,"rest":120,"cook":40,"temp":190,"shape":"dome","top":"pistache","layers":[{"t":"choux","h":16},{"t":"creme_pistache","h":38},{"t":"insert_fram","h":8},{"t":"choux","h":16,"lock":true}],
-"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème mousseline pistache","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["beurre",150,"g"],["pâte de pistache",60,"g"]]},{"n":"Insert framboise","i":[["framboises",200,"g"],["sucre",60,"g"],["jus de citron",5,"ml"]]},{"n":"Finition","i":[["pistaches concassées",40,"g"]]}],
-"steps":["Réaliser la pâte à choux comme pour des éclairs. Pocher une couronne de 18 cm et cuire 35 à 40 min à 190 °C.","Insert : cuire framboises, sucre et jus de citron 10 min, puis refroidir.","Crème : cuire la crème pâtissière (lait, jaunes, sucre, fécule), la refroidir, puis la fouetter avec le beurre pommade et la pâte de pistache.","Couper la couronne en deux. Déposer l'insert, pocher la crème, refermer et décorer de pistaches."]},
-{"slug":"noir-noisette","name":"Noir & Noisette","cat":"originale","s":["chocolat","noisette"],"desc":"Un biscuit chocolat, un croustillant praliné et une mousse intense sous un glaçage brillant.","portions":6,"diff":3,"prep":90,"rest":240,"cook":15,"temp":170,"shape":"slab","top":"miroir","layers":[{"t":"biscuit_choc","h":16},{"t":"croq_noisette","h":12},{"t":"mousse_choc","h":42}],
-"comps":[{"n":"Biscuit chocolat","i":[["œufs",3,""],["sucre",90,"g"],["chocolat noir",100,"g"],["beurre",60,"g"],["farine",20,"g"]]},{"n":"Croustillant noisette","i":[["praliné noisette",100,"g"],["chocolat au lait",40,"g"],["crêpes dentelle émiettées",60,"g"]]},{"n":"Mousse au chocolat","i":[["chocolat noir",200,"g"],["crème liquide chaude",100,"ml"],["crème liquide montée",250,"ml"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],
-"steps":["Biscuit : fondre chocolat et beurre, ajouter les jaunes et la farine, incorporer les blancs montés avec le sucre. Cuire 12 à 15 min à 170 °C.","Croustillant : mélanger praliné et chocolat fondus avec les crêpes dentelle, étaler sur le biscuit et placer au froid.","Mousse : verser la crème chaude sur le chocolat, lisser, puis incorporer la crème montée. Couler sur le croustillant.","Laisser prendre au congélateur 4 h, puis glacer avec crème chaude et chocolat lissés."]},
-{"slug":"passion-vanille","name":"Passion Vanille","cat":"originale","s":["passion","vanille"],"desc":"Un sablé, un insert vif au fruit de la passion et une crème diplomate à la vanille.","portions":6,"diff":2,"prep":75,"rest":180,"cook":18,"temp":170,"shape":"slab","top":"fruits","layers":[{"t":"sable","h":14},{"t":"insert_passion","h":12},{"t":"creme_vanille","h":44}],
-"comps":[{"n":"Sablé","i":[["farine",150,"g"],["beurre",100,"g"],["sucre",60,"g"],["jaunes d'œufs",2,""],["levure chimique",4,"g"]]},{"n":"Insert passion","i":[["purée de fruit de la passion",100,"g"],["sucre",30,"g"],["gélatine en feuilles",4,"g"]]},{"n":"Crème diplomate vanille","i":[["lait",400,"ml"],["jaunes d'œufs",3,""],["sucre",80,"g"],["fécule de maïs",30,"g"],["gousse de vanille",1,""],["crème liquide montée",200,"ml"]]}],
-"steps":["Sablé : mélanger les ingrédients, étaler à 5 mm et cuire 18 min à 170 °C. Détailler en cercle.","Insert : chauffer purée et sucre, ajouter la gélatine ramollie, couler et congeler.","Crème : cuire la crème pâtissière à la vanille, la refroidir, puis incorporer la crème montée.","Monter sur le sablé : insert, puis crème. Laisser prendre 3 h au frais et décorer de fruits."]}
-]}
-</script>
+<script type="application/json" id="pdata">{"v":1,"statut":"demo","items":[{"slug":"framboise-vanille","name":"Framboise & Vanille","cat":"classique","s":["framboise","vanille"],"desc":"Une création délicate et intemporelle.","portions":6,"diff":2,"prep":75,"rest":180,"cook":20,"temp":180,"shape":"slab","top":"fruits","layers":[{"t":"sucree","h":16},{"t":"insert_fram","h":10},{"t":"creme_vanille","h":42}],"comps":[{"n":"Pâte sucrée","i":[["farine",250,"g"],["beurre",125,"g"],["sucre glace",90,"g"],["œuf",1,""],["sel",1,"pincée"]]},{"n":"Insert framboise","i":[["framboises",150,"g"],["sucre",40,"g"],["jus de citron",5,"ml"]]},{"n":"Crème diplomate vanille","i":[["lait",400,"ml"],["jaunes d'œufs",3,""],["sucre",80,"g"],["fécule de maïs",30,"g"],["gousse de vanille",1,""],["crème liquide montée",200,"ml"]]},{"n":"Finition","i":[["framboises fraîches",150,"g"]]}],"steps":["Mélanger farine, sucre glace, sel et beurre froid en dés jusqu'à obtenir un sable, puis ajouter l'œuf. Laisser 1 h au frais.","Étaler la pâte, foncer un cercle de 22 cm et cuire à blanc 20 min à 180 °C.","Insert : cuire framboises, sucre et jus de citron 10 min, puis refroidir et étaler dans le fond de tarte.","Crème : cuire la crème pâtissière à la vanille, la refroidir, puis incorporer la crème montée.","Garnir le fond de tarte, laisser prendre 3 h au frais et décorer de framboises fraîches."]},{"slug":"tarte-citron","name":"Tarte au citron","cat":"classique","s":["citron"],"desc":"Un sablé fin, une crème citron franche et une meringue légèrement dorée.","portions":6,"diff":2,"prep":60,"rest":180,"cook":20,"temp":180,"shape":"tarte","top":"meringue","layers":[{"t":"sucree","h":20},{"t":"creme_citron","h":46}],"comps":[{"n":"Pâte sucrée","i":[["farine",250,"g"],["beurre",125,"g"],["sucre glace",90,"g"],["œuf",1,""],["sel",1,"pincée"]]},{"n":"Crème au citron","i":[["jus de citron",120,"ml"],["zeste de citron",2,"citrons"],["sucre",120,"g"],["œufs",3,""],["beurre",150,"g"]]},{"n":"Meringue","i":[["blancs d'œufs",3,""],["sucre",150,"g"]]}],"steps":["Mélanger farine, sucre glace, sel et beurre froid en dés jusqu'à obtenir un sable, puis ajouter l'œuf. Former une boule et la laisser 1 h au frais.","Étaler la pâte, foncer un cercle de 22 cm et piquer le fond. Cuire à blanc 20 min à 180 °C.","Fouetter jus, zestes, sucre et œufs au bain-marie jusqu'à 82 °C.","Laisser tiédir à 40 °C, ajouter le beurre en dés et mixer. Verser dans le fond de tarte et laisser prendre 2 h au frais.","Monter les blancs en ajoutant le sucre en trois fois. Pocher sur la tarte et colorer au chalumeau."]},{"slug":"eclair-chocolat","name":"Éclair au chocolat","cat":"classique","s":["chocolat"],"desc":"Une pâte à choux croustillante, une crème pâtissière au chocolat noir et un glaçage brillant.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","layers":[{"t":"choux","h":14},{"t":"creme_choc","h":38},{"t":"choux","h":16,"lock":true}],"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème pâtissière au chocolat","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["chocolat noir",150,"g"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : fouetter jaunes, sucre et fécule, verser le lait bouillant et recuire en fouettant 2 min. Hors du feu, ajouter le chocolat. Filmer au contact et refroidir.","Garnir les éclairs. Verser la crème chaude sur le chocolat, lisser, puis glacer."]},{"slug":"eclair-yuzu","name":"Éclair au yuzu","cat":"revisitee","s":["yuzu","agrumes"],"desc":"Le classique réinventé avec une crème acidulée au yuzu et un glaçage pâle.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","tc":"#F2E5A6","layers":[{"t":"choux","h":14},{"t":"creme_yuzu","h":38},{"t":"choux","h":16,"lock":true}],"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème au yuzu","i":[["jus de yuzu",80,"ml"],["sucre",80,"g"],["œufs",2,""],["beurre",100,"g"]]},{"n":"Glaçage","i":[["sucre glace",150,"g"],["jus de yuzu",30,"ml"]]}],"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : chauffer jus, sucre et œufs au bain-marie en fouettant jusqu'à épaississement. Hors du feu, ajouter le beurre froid et mixer. Refroidir.","Garnir les éclairs, puis les glacer avec sucre glace et jus de yuzu."]},{"slug":"paris-brest-pistache","name":"Paris-Brest pistache framboise","cat":"revisitee","s":["pistache","framboise"],"desc":"La couronne de choux, une crème mousseline à la pistache et un cœur de framboise.","portions":6,"diff":3,"prep":90,"rest":120,"cook":40,"temp":190,"shape":"dome","top":"pistache","layers":[{"t":"choux","h":16},{"t":"creme_pistache","h":38},{"t":"insert_fram","h":8},{"t":"choux","h":16,"lock":true}],"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème mousseline pistache","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["beurre",150,"g"],["pâte de pistache",60,"g"]]},{"n":"Insert framboise","i":[["framboises",200,"g"],["sucre",60,"g"],["jus de citron",5,"ml"]]},{"n":"Finition","i":[["pistaches concassées",40,"g"]]}],"steps":["Réaliser la pâte à choux comme pour des éclairs. Pocher une couronne de 18 cm et cuire 35 à 40 min à 190 °C.","Insert : cuire framboises, sucre et jus de citron 10 min, puis refroidir.","Crème : cuire la crème pâtissière (lait, jaunes, sucre, fécule), la refroidir, puis la fouetter avec le beurre pommade et la pâte de pistache.","Couper la couronne en deux. Déposer l'insert, pocher la crème, refermer et décorer de pistaches."]},{"slug":"noir-noisette","name":"Noir & Noisette","cat":"originale","s":["chocolat","noisette"],"desc":"Un biscuit chocolat, un croustillant praliné et une mousse intense sous un glaçage brillant.","portions":6,"diff":3,"prep":90,"rest":240,"cook":15,"temp":170,"shape":"slab","top":"miroir","layers":[{"t":"biscuit_choc","h":16},{"t":"croq_noisette","h":12},{"t":"mousse_choc","h":42}],"comps":[{"n":"Biscuit chocolat","i":[["œufs",3,""],["sucre",90,"g"],["chocolat noir",100,"g"],["beurre",60,"g"],["farine",20,"g"]]},{"n":"Croustillant noisette","i":[["praliné noisette",100,"g"],["chocolat au lait",40,"g"],["crêpes dentelle émiettées",60,"g"]]},{"n":"Mousse au chocolat","i":[["chocolat noir",200,"g"],["crème liquide chaude",100,"ml"],["crème liquide montée",250,"ml"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],"steps":["Biscuit : fondre chocolat et beurre, ajouter les jaunes et la farine, incorporer les blancs montés avec le sucre. Cuire 12 à 15 min à 170 °C.","Croustillant : mélanger praliné et chocolat fondus avec les crêpes dentelle, étaler sur le biscuit et placer au froid.","Mousse : verser la crème chaude sur le chocolat, lisser, puis incorporer la crème montée. Couler sur le croustillant.","Laisser prendre au congélateur 4 h, puis glacer avec crème chaude et chocolat lissés."]},{"slug":"passion-vanille","name":"Passion Vanille","cat":"originale","s":["passion","vanille"],"desc":"Un sablé, un insert vif au fruit de la passion et une crème diplomate à la vanille.","portions":6,"diff":2,"prep":75,"rest":180,"cook":18,"temp":170,"shape":"slab","top":"fruits","layers":[{"t":"sable","h":14},{"t":"insert_passion","h":12},{"t":"creme_vanille","h":44}],"comps":[{"n":"Sablé","i":[["farine",150,"g"],["beurre",100,"g"],["sucre",60,"g"],["jaunes d'œufs",2,""],["levure chimique",4,"g"]]},{"n":"Insert passion","i":[["purée de fruit de la passion",100,"g"],["sucre",30,"g"],["gélatine en feuilles",4,"g"]]},{"n":"Crème diplomate vanille","i":[["lait",400,"ml"],["jaunes d'œufs",3,""],["sucre",80,"g"],["fécule de maïs",30,"g"],["gousse de vanille",1,""],["crème liquide montée",200,"ml"]]}],"steps":["Sablé : mélanger les ingrédients, étaler à 5 mm et cuire 18 min à 170 °C. Détailler en cercle.","Insert : chauffer purée et sucre, ajouter la gélatine ramollie, couler et congeler.","Crème : cuire la crème pâtissière à la vanille, la refroidir, puis incorporer la crème montée.","Monter sur le sablé : insert, puis crème. Laisser prendre 3 h au frais et décorer de fruits."]}],"inspiration":"framboise-vanille"}</script>
 <dialog id="dlg">
 <div class="tabs"><button class="on" data-tab="login">Connexion</button><button data-tab="signup">Inscription</button></div>
 <form id="form">
@@ -486,28 +456,46 @@ const hash=s=>{let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul
 const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};
 const shade=(h,f)=>{const n=parseInt(h.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const t=f<0?0:255,p=Math.abs(f);return`rgb(${Math.round((t-r)*p+r)},${Math.round((t-g)*p+g)},${Math.round((t-b)*p+b)})`;};
 const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-function svg(p,L,top){L=L||p.layers;top=top||p.top;const id='s'+(++uid),r=rng(hash(p.slug)),W=176,X=32,B=164;
-let y=B,defs='',lay='',tex='';const used={};
+function svg(p,L,top){L=L||p.layers;top=top||p.top;const id='s'+(++uid),r=rng(hash(p.slug)),W=176,X=32,B=164,n=L.length,rr=(a,b)=>a+r()*(b-a);
+let defs='',lay='',tex='',y=B;
 const pcs=L.map(l=>{y-=l.h;return{y,h:l.h,t:l.t};});const topY=y;
-pcs.forEach(c=>{const pl=PAL[c.t]||{c:'#ccc'},col=pl.c;
-if(!used[c.t]){used[c.t]=1;defs+=`<linearGradient id="${id}${c.t}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${shade(col,.18)}"/><stop offset=".5" stop-color="${col}"/><stop offset="1" stop-color="${shade(col,-.14)}"/></linearGradient>`;}
-lay+=`<rect x="${X}" y="${c.y}" width="${W}" height="${c.h}" fill="url(#${id}${c.t})"/><line x1="${X}" x2="${X+W}" y1="${c.y}" y2="${c.y}" stroke="#fff" stroke-opacity=".3"/>`;
-const n=pl.tx?Math.round(W*c.h/(pl.tx=='air'?420:200)):0;
-for(let i=0;i<n;i++){const cx=X+4+r()*(W-8),cy=c.y+2+r()*(c.h-4);
-if(pl.tx=='air')tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${2+r()*4}" ry="${1.5+r()*2.5}" fill="${shade(col,-.35)}" opacity=".28"/>`;
-else if(pl.tx=='crunch')tex+=`<circle cx="${cx}" cy="${cy}" r="${1+r()*1.8}" fill="${r()>.5?shade(col,-.4):shade(col,.4)}" opacity=".7"/>`;
-else tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${1+r()*1.6}" ry="${.7+r()}" fill="${shade(col,-.3)}" opacity=".35"/>`;}});
+const wave=(yy,amp)=>{let d='',v=0;for(let x=0;x<=W;x+=4){v+=(r()-.5)*amp;v*=.8;d+=(x?'L':'M')+(X+x)+' '+(yy+v).toFixed(1);}return d;};
+for(let idx=n-1;idx>=0;idx--){const c=pcs[idx],pl=PAL[c.t]||{c:'#ccc',k:'x'},col=pl.c;
+defs+=`<linearGradient id="${id}g${idx}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${shade(col,.16)}"/><stop offset=".55" stop-color="${col}"/><stop offset="1" stop-color="${shade(col,-.16)}"/></linearGradient>`;
+const td=idx==n-1?`M${X} ${c.y}L${X+W} ${c.y}`:wave(c.y,pl.k=='creme'||pl.k=='insert'?.5:pl.k=='mousse'?.9:1.6);
+lay+=`<path d="${td}L${X+W} ${B}L${X} ${B}Z" fill="url(#${id}g${idx})"/><path d="${td}" fill="none" stroke="#fff" stroke-opacity=".3"/>`;}
+pcs.forEach((c,idx)=>{const pl=PAL[c.t]||{c:'#ccc',k:'x'},col=pl.c,h=c.h,y0=c.y+2,hh=h-4,dk=a=>shade(col,-a),lt=a=>shade(col,a);
+const cnt=d=>Math.max(2,Math.round(W*h/d));
+if(pl.k=='base'&&c.t!='choux'){for(let i=0,m=cnt(95);i<m;i++){const cx=X+4+r()*(W-8),cy=y0+r()*hh,rx=rr(.8,2.4),ry=rr(.5,1.3);tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${dk(.4)}" opacity=".42"/><ellipse cx="${cx}" cy="${cy+ry}" rx="${rx*.7}" ry=".4" fill="${lt(.4)}" opacity=".55"/>`;}
+for(let i=0,m=cnt(40);i<m;i++)tex+=`<circle cx="${X+r()*W}" cy="${y0+r()*hh}" r=".4" fill="${r()>.5?dk(.3):lt(.3)}" opacity=".45"/>`;}
+if(c.t=='choux'){for(let i=0,m=Math.max(3,cnt(650));i<m;i++){const cx=X+10+r()*(W-20),cy=y0+3+r()*Math.max(1,hh-6),rx=rr(5,13),ry=rr(1.6,Math.max(2,h*.26));tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${dk(.45)}" opacity=".38"/><ellipse cx="${cx+1}" cy="${cy+ry*.4}" rx="${rx*.8}" ry="${ry*.5}" fill="${lt(.3)}" opacity=".5"/>`;}
+for(let i=0,m=cnt(110);i<m;i++)tex+=`<ellipse cx="${X+3+r()*(W-6)}" cy="${y0+r()*hh}" rx="${rr(.7,1.8)}" ry="${rr(.5,1)}" fill="${dk(.4)}" opacity=".4"/>`;
+tex+=`<rect x="${X}" y="${c.y}" width="3" height="${h}" fill="${dk(.3)}" opacity=".7"/><rect x="${X+W-3}" y="${c.y}" width="3" height="${h}" fill="${dk(.3)}" opacity=".7"/>`;
+if(idx==n-1)tex+=`<rect x="${X}" y="${c.y}" width="${W}" height="3.5" fill="#9A5E22" opacity=".85"/><rect x="${X}" y="${c.y+3.5}" width="${W}" height="1" fill="#fff" opacity=".18"/>`;
+if(idx==0)tex+=`<rect x="${X}" y="${B-4}" width="${W}" height="4" fill="#A66B2B" opacity=".8"/>`;}
+if(pl.k=='mousse'||c.t=='creme_choc'){for(let i=0,m=cnt(110);i<m;i++){const cx=X+3+r()*(W-6),cy=y0+r()*hh,q=rr(.5,1.8);tex+=`<circle cx="${cx}" cy="${cy}" r="${q}" fill="${dk(.35)}" opacity=".4"/><circle cx="${cx-q*.3}" cy="${cy-q*.3}" r="${q*.35}" fill="#fff" opacity=".35"/>`;}}
+if(pl.k=='creme'&&c.t!='creme_choc'){for(let i=0,m=cnt(380);i<m;i++)tex+=`<circle cx="${X+3+r()*(W-6)}" cy="${y0+r()*hh}" r="${rr(.5,1.1)}" fill="#fff" opacity=".4"/>`;
+if(c.t=='creme_pistache')for(let i=0,m=cnt(90);i<m;i++)tex+=`<circle cx="${X+3+r()*(W-6)}" cy="${y0+r()*hh}" r=".6" fill="${dk(.4)}" opacity=".5"/>`;
+if(c.t=='creme_citron'||c.t=='creme_yuzu')for(let i=0,m=cnt(300);i<m;i++)tex+=`<ellipse cx="${X+3+r()*(W-6)}" cy="${y0+r()*hh}" rx="1.1" ry=".5" fill="#C9B83C" opacity=".5"/>`;
+tex+=`<rect x="${X+6}" y="${c.y+2}" width="${W*.3}" height="${Math.max(2,h*.18)}" rx="2" fill="#fff" opacity=".12"/>`;}
+if(c.t=='insert_fram')for(let i=0,m=cnt(55);i<m;i++)tex+=`<ellipse cx="${X+2+r()*(W-4)}" cy="${y0+r()*hh}" rx=".9" ry=".5" fill="#F3D98A" opacity=".85"/>`;
+if(c.t=='insert_passion')for(let i=0,m=cnt(140);i<m;i++){const cx=X+3+r()*(W-6),cy=y0+r()*hh;tex+=`<circle cx="${cx}" cy="${cy}" r="2.6" fill="#FFD27A" opacity=".4"/><ellipse cx="${cx}" cy="${cy}" rx="1.4" ry=".9" fill="#2B1A10" opacity=".85"/>`;}
+if(c.t=='croq_noisette')for(let i=0,m=cnt(55);i<m;i++){const cx=X+3+r()*(W-6),cy=y0+r()*hh,s=rr(2,4.5),cc=['#7A4C26','#B98652','#D4A36C','#5E3A1C'][i%4];tex+=`<polygon points="${cx},${cy-s} ${cx+s},${cy-s*.2} ${cx+s*.5},${cy+s*.8} ${cx-s*.7},${cy+s*.5}" fill="${cc}" stroke="${shade(cc,.4)}" stroke-width=".4" opacity=".92"/>`;}
+});
 let d;const sh=p.shape;
 if(sh=='tarte')d=`M${X+7} ${B}L${X+W-7} ${B}L${X+W} ${topY}L${X} ${topY}Z`;
 else if(sh=='dome')d=`M${X} ${B}L${X} ${topY+16}Q${X} ${topY} ${X+22} ${topY}L${X+W-22} ${topY}Q${X+W} ${topY} ${X+W} ${topY+16}L${X+W} ${B}Z`;
 else d=`M${X+4} ${B}L${X+W-4} ${B}L${X+W} ${topY+6}Q${X+W} ${topY} ${X+W-6} ${topY}L${X+6} ${topY}Q${X} ${topY} ${X} ${topY+6}Z`;
 let tp='';const tc=p.tc||'#2E1810';
-if(top=='miroir')tp=`<path d="M${X} ${topY+8}Q${X} ${topY-9} ${X+16} ${topY-9}L${X+W-16} ${topY-9}Q${X+W} ${topY-9} ${X+W} ${topY+8}Z" fill="${tc}"/><rect x="${X+16}" y="${topY-6}" width="${W*.42}" height="2.4" rx="1.2" fill="#fff" opacity=".38"/>`;
-else if(top=='meringue'){for(let i=0;i<5;i++){const x0=X-4+i*(W/5),w=W/5+8,h=22+r()*10;tp+=`<path d="M${x0} ${topY}Q${x0+w*.25} ${topY-6} ${x0+w*.5} ${topY-h}Q${x0+w*.75} ${topY-6} ${x0+w} ${topY}Z" fill="#FBF5E8" stroke="#E7D3AA" stroke-width=".8"/><path d="M${x0+w*.4} ${topY-h+6}Q${x0+w*.5} ${topY-h-1} ${x0+w*.55} ${topY-h+8}" stroke="#D9AE63" stroke-width="2" fill="none" stroke-linecap="round"/>`;}}
-else if(top=='fruits'){for(let i=0;i<4;i++){const cx=X+22+i*(W-44)/3;tp+=`<ellipse cx="${cx}" cy="${topY-5}" rx="8" ry="8" fill="#B0213C"/><ellipse cx="${cx-2.5}" cy="${topY-7.5}" rx="2.4" ry="1.5" fill="#fff" opacity=".45"/>`;}}
-else if(top=='noisette'||top=='pistache'){const c=top=='pistache'?['#8DA553','#A9BF72']:['#9A6A3B','#C08A52'];for(let i=0;i<22;i++)tp+=`<ellipse cx="${X+6+r()*(W-12)}" cy="${topY-1-r()*5}" rx="${2+r()*2.2}" ry="${1.4+r()*1.4}" fill="${c[i%2]}"/>`;}
+if(top=='miroir'){defs+=`<linearGradient id="${id}mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${shade(tc,.2)}"/><stop offset="1" stop-color="${tc}"/></linearGradient>`;
+tp=`<path d="M${X-1} ${topY+9}Q${X-1} ${topY-10} ${X+16} ${topY-10}L${X+W-16} ${topY-10}Q${X+W+1} ${topY-10} ${X+W+1} ${topY+9}Z" fill="url(#${id}mg)"/><path d="M${X+22} ${topY+6}v6q0 5 3 5t3-5v-6zM${X+W-40} ${topY+6}v11q0 5 3 5t3-5v-11z" fill="${tc}"/><path d="M${X+14} ${topY-6}Q${X+70} ${topY-9} ${X+W*.62} ${topY-6}" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".42"/><circle cx="${X+W-30}" cy="${topY-5}" r="1.6" fill="#fff" opacity=".5"/>`;}
+else if(top=='meringue'){defs+=`<linearGradient id="${id}mm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFBF2"/><stop offset="1" stop-color="#F0DBB0"/></linearGradient>`;
+for(let i=0;i<5;i++){const x0=X-4+i*(W/5),w=W/5+8,h=rr(22,32);tp+=`<path d="M${x0} ${topY}Q${x0+w*.25} ${topY-6} ${x0+w*.5} ${topY-h}Q${x0+w*.75} ${topY-6} ${x0+w} ${topY}Z" fill="url(#${id}mm)" stroke="#E7D3AA" stroke-width=".8"/><path d="M${x0+w*.4} ${topY-h+9}Q${x0+w*.5} ${topY-h-1} ${x0+w*.6} ${topY-h+9}Q${x0+w*.5} ${topY-h+5} ${x0+w*.4} ${topY-h+9}Z" fill="#C98F45" opacity=".85"/><path d="M${x0+w*.3} ${topY-3}Q${x0+w*.4} ${topY-h*.5} ${x0+w*.47} ${topY-h*.8}M${x0+w*.7} ${topY-3}Q${x0+w*.6} ${topY-h*.5} ${x0+w*.53} ${topY-h*.8}" stroke="#E3CFA3" stroke-width=".8" fill="none" opacity=".8"/>`;}}
+else if(top=='fruits'){const o=[[0,0],[-3,1],[3,1],[-1.5,-2.6],[1.5,-2.6],[-4.2,-1.2],[4.2,-1.2],[0,3]];for(let i=0;i<4;i++){const cx=X+24+i*(W-48)/3,cy=topY-4;o.forEach((q,j)=>{tp+=`<circle cx="${cx+q[0]}" cy="${cy+q[1]}" r="2.9" fill="${j%2?'#C4304B':'#A91D38'}" stroke="#7E1228" stroke-width=".3"/><circle cx="${cx+q[0]-.9}" cy="${cy+q[1]-.9}" r=".7" fill="#fff" opacity=".5"/>`;});}}
+else if(top=='noisette'||top=='pistache'){const c2=top=='pistache'?['#7C9A4B','#A9BF72','#5E7A34']:['#8A5A2E','#C08A52','#6E4524'];for(let i=0;i<26;i++){const cx=X+6+r()*(W-12),cy=topY-1-r()*5,k=c2[i%3];tp+=`<ellipse cx="${cx}" cy="${cy}" rx="${rr(2,4)}" ry="${rr(1.4,2.4)}" fill="${k}" stroke="${shade(k,-.3)}" stroke-width=".3" transform="rotate(${rr(-30,30)} ${cx} ${cy})"/>`;}}
 else if(top=='poudre')tp=`<rect x="${X+2}" y="${topY-3}" width="${W-4}" height="3.5" rx="1.5" fill="#4B2C1D" opacity=".6"/>`;
-return`<svg viewBox="0 54 240 136" role="img" aria-label="Coupe : ${p.name}"><defs>${defs}<clipPath id="${id}c"><path d="${d}"/></clipPath></defs><ellipse cx="${X+W/2}" cy="${B+9}" rx="${W/2+16}" ry="5" fill="#3A2419" opacity=".1"/><rect x="${X-12}" y="${B}" width="${W+24}" height="6" rx="3" fill="#fff"/><g clip-path="url(#${id}c)">${lay}${tex}</g><path d="${d}" fill="none" stroke="#3A2419" stroke-opacity=".16"/>${tp}</svg>`;}
+const bc=(PAL[L[0].t]||{c:'#D8A25E'}).c;let cr='';for(let i=0;i<7;i++)cr+=`<ellipse cx="${rr(X-8,X+W+8)}" cy="${B+rr(1,4)}" rx="${rr(.8,2)}" ry="${rr(.5,1)}" fill="${shade(bc,-.1)}"/>`;
+return`<svg viewBox="0 54 240 136" role="img" aria-label="Coupe : ${p.name}"><defs>${defs}<clipPath id="${id}c"><path d="${d}"/></clipPath><filter id="${id}b" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="3"/></filter><filter id="${id}n" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="${hash(p.slug)%90}"/><feColorMatrix values="0 0 0 0 .25 0 0 0 0 .14 0 0 0 0 .06 0 0 0 .9 -.35"/></filter><linearGradient id="${id}L" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient><linearGradient id="${id}p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#E9DFCF"/></linearGradient></defs><ellipse cx="${X+W/2}" cy="${B+8}" rx="${W/2+14}" ry="5" fill="#3A2419" opacity=".28" filter="url(#${id}b)"/><rect x="${X-12}" y="${B}" width="${W+24}" height="6" rx="3" fill="url(#${id}p)"/><g clip-path="url(#${id}c)">${lay}${tex}<rect x="${X}" y="${topY}" width="${W}" height="${B-topY}" fill="url(#${id}L)"/><rect x="${X}" y="${topY}" width="${W}" height="${B-topY}" filter="url(#${id}n)" opacity=".3" style="mix-blend-mode:multiply"/></g><path d="${d}" fill="none" stroke="#3A2419" stroke-opacity=".18"/>${cr}${tp}</svg>`;}
 const hay=p=>norm([p.name,p.s.join(' '),p.comps.map(c=>c.n+' '+c.i.map(x=>x[0]).join(' ')).join(' ')].join(' '));
 function renderColl(){const q=norm(($('#cq')||{}).value||'');
 const it=P.filter(p=>(cat=='all'||p.cat==cat)&&(!q||hay(p).includes(q)));
@@ -547,7 +535,7 @@ async function toggleFav(slug){if(!sb||!curUser){$('#msg').textContent='';setMod
 const on=favs.has(slug);const q=on?sb.from('favorites').delete().eq('user_id',curUser.id).eq('pastry_slug',slug):sb.from('favorites').upsert({user_id:curUser.id,pastry_slug:slug});
 const {error}=await q;if(error){alert("Les favoris ne sont pas encore activés : la table n'existe pas dans Supabase (fichier schema_favoris.sql à lancer).");return;}
 on?favs.delete(slug):favs.add(slug);paintFav();}
-async function loadFavs(){favs=new Set();if(sb&&curUser){const {data,error}=await sb.from('favorites').select('pastry_slug');if(!error&&data)data.forEach(d=>favs.add(d.pastry_slug));}paintFav();}
+async function loadFavs(){favs=new Set();if(sb&&curUser){const {data,error}=await sb.from('favorites').select('pastry_slug');if(!error&&data)data.forEach(d=>favs.add(d.pastry_slug));}paintFav();renderFavs();}
 function closeFiche(){const f=$('#fiche');if(f)f.hidden=true;}
 function sheetFor(t,m,body){$('#sheet').innerHTML=`<div class="ft" style="margin:0 0 8px">Pâtissio · Fiche technique</div><h1>${t}</h1><div class="meta">${m}</div>${body}<div class="ft">Pâtissio</div>`;window.print();}
 function check(p,L,top){const m=[];L.forEach((l,i)=>{const o=p.layers[i];if(o.t!=l.t&&PAL[l.t].k=='base'&&((o.t=='choux')!=(l.t=='choux')))m.push('Remplacer une pâte à choux par une pâte sablée ou sucrée (ou l\'inverse) change la structure : le montage devra être revu.');});
@@ -564,19 +552,59 @@ const w=check(at.p,at.L,at.top);
 $('#atres').innerHTML=diff.length?`<div class="atc"><span class="badge">Expérimentale · non testée</span><h3 class="fh3">Ma version de ${at.p.name}</h3><p class="rl">Modifications</p><ul class="chk">${diff.map(x=>`<li>${x}</li>`).join('')}</ul>${w.length?`<p class="rl">Points d'attention</p><ul class="warn">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<p class="fnote">Non encore développé : le recalcul des quantités pour les préparations modifiées et les vérifications techniques complètes. Ils arriveront avec ta bibliothèque de préparations vérifiées.</p><div class="act"><button class="btn bp" id="atpdf">Fiche de ma version</button></div></div>`:`<p class="fnote" style="margin-top:32px">Modifie un élément pour créer ta version.</p>`;
 const b=$('#atpdf');if(b)b.onclick=()=>sheetFor(at.p.name+' · ma version','Création expérimentale, non testée',`<div class="cols"><div><h2>Composition</h2><ol>${listComp(at.p,at.L,at.top).map(x=>`<li>${x}</li>`).join('')}</ol></div><div><h2>Modifications</h2><ul>${diff.map(x=>`<li>${x}</li>`).join('')}</ul></div></div><div class="tip"><b>Version non testée.</b> Les quantités des préparations modifiées ne sont pas calculées : ${w.join(' ')||'aucun point d\'attention détecté, mais aucune vérification complète n\'est encore disponible.'}</div>`);};
 $('#atbox').querySelectorAll('select[data-i]').forEach(s=>s.onchange=()=>{at.L[+s.dataset.i].t=s.value;upd();});$('#atop').onchange=e=>{at.top=e.target.value;upd();};upd();}
-function route(){const [v,slug]=location.hash.slice(1).split('/');const view=['home','studio','fiches','collection','atelier'].includes(v)?v:'home';show(view);closeFiche();if(view=='collection'&&slug)openFiche(slug);if(view=='atelier'){if(slug)openAtelier(slug);else location.hash='collection';}}
+function route(){const [v,slug]=location.hash.slice(1).split('/');const view=['home','studio','fiches','collection','atelier','apprendre','favoris'].includes(v)?v:'home';show(view);closeFiche();if(view=='favoris')renderFavs();if(view=='collection'&&slug)openFiche(slug);if(view=='atelier'){if(slug)openAtelier(slug);else location.hash='collection';}}
+
+let INSP='';
+function heroScene(){const r=rng(11),f=(a,b)=>a+r()*(b-a);
+const gl=(id,a,b)=>`<linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient>`;
+let s=`<svg viewBox="0 0 400 600" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Vitrine d'une maison de pâtisserie"><defs>${gl('hw','#EBDAC2','#DDC3A0')}${gl('hn','#FFE9B5','#E3BE80')}${gl('hm','#FBF6EE','#DACDBA')}${gl('hch','#6A4030','#2A160D')}${gl('hcr','#FFFBF3','#EFDFC3')}${gl('hpi','#C9D79A','#9DB06C')}${gl('hpk','#F6D3D3','#E3A9AE')}${gl('hfr','#EEE2CF','#DCCDB5')}
+<linearGradient id="hgold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B8893C"/><stop offset=".5" stop-color="#EBCF8E"/><stop offset="1" stop-color="#B8893C"/></linearGradient>
+<radialGradient id="hl"><stop offset="0" stop-color="#FFEFC2"/><stop offset="1" stop-color="#FFEFC2" stop-opacity="0"/></radialGradient>
+<radialGradient id="hg" cx=".5" cy=".3" r=".75"><stop offset="0" stop-color="#FFF3D6" stop-opacity=".85"/><stop offset="1" stop-color="#FFF3D6" stop-opacity="0"/></radialGradient>
+<filter id="hb"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+<rect width="400" height="460" fill="url(#hw)"/><rect width="400" height="460" fill="url(#hg)"/>`;
+[[80,34],[200,26],[320,34]].forEach(p=>{s+=`<circle cx="${p[0]}" cy="${p[1]}" r="34" fill="url(#hl)" opacity=".8"/><circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#FFF6DA"/><path d="M${p[0]} 0V${p[1]}" stroke="#B8893C" stroke-width=".8"/>`;});
+const niche=(x,w,y0,y1,sh)=>{let n=`<path d="M${x} ${y1}V${y0+w/2}A${w/2} ${w/2} 0 0 1 ${x+w} ${y0+w/2}V${y1}Z" fill="url(#hn)" stroke="url(#hgold)" stroke-width="2.4"/>`;
+sh.forEach((yy,i)=>{n+=`<path d="M${x+3} ${yy}H${x+w-3}" stroke="#B8893C" stroke-width="1.4"/>`;for(let k=0;k<3;k++){const bx=x+8+k*((w-16)/3);n+=i%2?`<rect x="${bx}" y="${yy-17}" width="${(w-22)/3}" height="17" rx="2" fill="#4A2C1D"/><circle cx="${bx+(w-22)/6}" cy="${yy-8}" r="2.4" fill="#E2BE8A"/>`:`<rect x="${bx+2}" y="${yy-21}" width="${(w-30)/3}" height="21" rx="4" fill="#F3E7D2" stroke="#D9C39B" stroke-width=".6"/><rect x="${bx+2}" y="${yy-21}" width="${(w-30)/3}" height="4" rx="2" fill="#B98652"/>`;}});return n;};
+s+=niche(298,92,64,310,[150,222,294])+niche(-34,76,84,310,[170,250]);
+s+=`<path d="M402 40C370 70 340 110 300 178M368 72C350 68 334 80 322 94M340 112C326 110 312 118 304 130" stroke="#6B4A36" stroke-width="2.4" fill="none" stroke-linecap="round"/>`;
+for(let i=0;i<36;i++){const t=r(),u=1-t,bx=u*u*u*402+3*u*u*t*370+3*u*t*t*340+t*t*t*300,by=u*u*u*40+3*u*u*t*70+3*u*t*t*110+t*t*t*178,x=bx+f(-16,16),y=by+f(-12,14),q=f(4.5,7.5);s+=`<circle cx="${x}" cy="${y}" r="${q}" fill="#FFFAF3" stroke="#EFD6D1" stroke-width=".6"/><circle cx="${x}" cy="${y}" r="1.5" fill="#E5A9A9"/>`;}
+s+=`<rect y="334" width="400" height="9" fill="#EFE5D6"/><rect y="342" width="400" height="2" fill="url(#hgold)"/>`;
+[130,268].forEach(x=>{s+=`<path d="M${x-20} 334Q${x-20} 300 ${x} 298Q${x+20} 300 ${x+20} 334Z" fill="#fff" fill-opacity=".22" stroke="#fff" stroke-opacity=".7" stroke-width="1.2"/><circle cx="${x}" cy="326" r="7" fill="url(#hpk)"/><path d="M${x-12} 316Q${x-10} 304 ${x-4} 302" stroke="#fff" stroke-width="1.5" fill="none" opacity=".6"/>`;});
+s+=`<rect x="24" y="318" width="352" height="100" rx="5" fill="url(#hn)" opacity=".38"/>`;
+const sd=(x,y,rx)=>`<ellipse cx="${x}" cy="${y+1}" rx="${rx}" ry="3" fill="#3A2419" opacity=".25" filter="url(#hb)"/>`;
+const rb=(x,y)=>`<circle cx="${x}" cy="${y}" r="5" fill="#B3243F"/><circle cx="${x+1}" cy="${y+1.5}" r="2.4" fill="#8E1530" opacity=".5"/><circle cx="${x-1.6}" cy="${y-1.6}" r="1.3" fill="#fff" opacity=".55"/>`;
+const tart=(x,y)=>sd(x,y,28)+`<path d="M${x-22} ${y}L${x+22} ${y}L${x+25} ${y-10}L${x-25} ${y-10}Z" fill="#D9A867" stroke="#B98650" stroke-width=".8"/><ellipse cx="${x}" cy="${y-10}" rx="25" ry="5" fill="url(#hcr)"/>`+[[-14,-14],[-5,-17],[5,-17],[14,-14],[-9,-10],[0,-12],[9,-10]].map(q=>rb(x+q[0],y+q[1])).join('');
+const white=(x,y)=>sd(x,y,28)+`<rect x="${x-24}" y="${y-26}" width="48" height="26" rx="5" fill="url(#hcr)" stroke="#E2CFAE" stroke-width=".8"/><ellipse cx="${x}" cy="${y-26}" rx="24" ry="5" fill="#FFFDF8" stroke="#E2CFAE" stroke-width=".6"/>`+[...Array(9).keys()].map(i=>`<circle cx="${x-20+i*5}" cy="${y-2}" r="2.5" fill="#F6E8CE" stroke="#D9C39B" stroke-width=".5"/>`).join('')+`<circle cx="${x}" cy="${y-30}" r="3.4" fill="url(#hgold)"/>`;
+const choc=(x,y)=>sd(x,y,30)+`<rect x="${x-27}" y="${y-7}" width="54" height="7" rx="2" fill="#B98652"/>`+[...Array(10).keys()].map(i=>`<circle cx="${x-24+i*5.4}" cy="${y-3.5}" r="1" fill="#7A4C26"/>`).join('')+`<path d="M${x-25} ${y-7}Q${x-25} ${y-42} ${x} ${y-42}Q${x+25} ${y-42} ${x+25} ${y-7}Z" fill="url(#hch)"/><path d="M${x-15} ${y-20}Q${x-13} ${y-34} ${x-3} ${y-37}" stroke="#fff" stroke-width="2" fill="none" opacity=".35" stroke-linecap="round"/>`+[[-10,-14],[4,-24],[12,-12],[-4,-30],[16,-22]].map(q=>`<circle cx="${x+q[0]}" cy="${y+q[1]}" r=".9" fill="#E8C46E"/>`).join('')+`<path d="M${x+2} ${y-42}Q${x+14} ${y-56} ${x+22} ${y-44}Q${x+12} ${y-40} ${x+2} ${y-42}Z" fill="#5B3322" stroke="#E8C46E" stroke-width=".6"/>`+rb(x-2,y-46);
+const pist=(x,y)=>sd(x,y,28)+`<rect x="${x-23}" y="${y-28}" width="46" height="28" rx="7" fill="url(#hpi)"/><ellipse cx="${x}" cy="${y-28}" rx="23" ry="5" fill="#D3DFA9"/>`+[...Array(13).keys()].map(i=>`<ellipse cx="${x-21+i*3.5}" cy="${y-3}" rx="2.2" ry="1.4" fill="#6F8B3E"/>`).join('')+[-9,0,9].map(d=>`<circle cx="${x+d}" cy="${y-33}" r="4" fill="#FBF4E4" stroke="#E6D8BD" stroke-width=".5"/>`).join('')+`<ellipse cx="${x+4}" cy="${y-36}" rx="2.6" ry="1.5" fill="#7F9A48"/>`;
+const pink=(x,y)=>sd(x,y,24)+`<rect x="${x-20}" y="${y-5}" width="40" height="5" rx="2" fill="#F4E6CE"/><path d="M${x-20} ${y-5}Q${x-20} ${y-38} ${x} ${y-38}Q${x+20} ${y-38} ${x+20} ${y-5}Z" fill="url(#hpk)"/><path d="M${x-12} ${y-18}Q${x-10} ${y-30} ${x-2} ${y-32}" stroke="#fff" stroke-width="2" fill="none" opacity=".5" stroke-linecap="round"/>`+rb(x,y-41);
+const mac=(x,y)=>sd(x,y,22)+['#F0B8C2','#B9CC8A','#F6E8C8'].map((c,i)=>{const yy=y-i*11;return`<ellipse cx="${x+(i%2?2:-2)}" cy="${yy-3}" rx="18" ry="4.5" fill="${c}"/><rect x="${x+(i%2?2:-2)-16}" y="${yy-8}" width="32" height="5" fill="#FFF6E8"/><ellipse cx="${x+(i%2?2:-2)}" cy="${yy-8}" rx="18" ry="4.5" fill="${c}"/><ellipse cx="${x+(i%2?2:-2)-5}" cy="${yy-9}" rx="6" ry="1.2" fill="#fff" opacity=".45"/>`;}).join('');
+const bar=(x,y)=>sd(x,y,22)+['#3B2216','#7A4B35','#C9A36B','#4A2C1D'].map((c,i)=>`<rect x="${x-20}" y="${y-26+i*6.5}" width="40" height="6.5" fill="${c}"/>`).join('')+`<path d="M${x-12} ${y-26}L${x-4} ${y-36}L${x+6} ${y-27}Z" fill="#2E1810" stroke="#E8C46E" stroke-width=".5"/>`;
+s+=`<g transform="translate(200 412) scale(1.12) translate(-200 -412)">`+tart(62,412)+white(114,412)+choc(168,412)+pist(224,412)+pink(274,412)+mac(318,412)+bar(354,412)+'</g>';
+s+=`<rect x="24" y="318" width="352" height="100" rx="5" fill="#fff" fill-opacity=".1" stroke="url(#hgold)" stroke-width="1.8"/><polygon points="60,318 112,318 82,418 30,418" fill="#fff" opacity=".1"/><polygon points="244,318 266,318 236,418 214,418" fill="#fff" opacity=".07"/><path d="M28 321H372" stroke="#fff" stroke-opacity=".6"/><rect x="24" y="412" width="352" height="8" fill="#F4ECDE"/><rect x="24" y="419" width="352" height="2" fill="url(#hgold)"/>`;
+s+=`<polygon points="0,421 400,421 400,452 0,452" fill="url(#hm)"/><rect y="452" width="400" height="5" fill="url(#hgold)"/><rect y="457" width="400" height="143" fill="#EADFCF"/>`;
+for(let i=0;i<60;i++)s+=`<path d="M${i*7} 457V600" stroke="${i%2?'#fff':'#B9A58A'}" stroke-opacity="${i%2?.35:.14}"/>`;
+s+=`<rect y="520" width="400" height="3" fill="url(#hgold)" opacity=".7"/>`;
+for(let i=0;i<7;i++)s+=`<path d="M${f(0,380)} 422Q${f(0,400)} ${f(430,448)} ${f(0,400)} 452" stroke="#A89A88" stroke-opacity=".28" fill="none"/>`;
+return s+'</svg>';}
+function renderInsp(){const p=P.find(x=>x.slug==INSP);const b=$('#insp');if(!b)return;b.innerHTML=p?`<a class="insp" href="#collection/${p.slug}"><div class="iv">${svg(p)}</div><div class="it"><p class="eb">Inspiration du moment</p><h3>${p.name}</h3><p class="ds">${p.desc}</p></div><span class="ia">→</span></a>`:'';}
+function renderFavs(){const b=$('#favbox');if(!b)return;
+if(!curUser){b.innerHTML=`<div class="favmsg"><p>Connecte-toi pour retrouver tes pâtisseries favorites.</p><button class="btn bp" id="favlog">Se connecter</button></div>`;$('#favlog').onclick=()=>{setMode('login');dlg.showModal();};return;}
+const it=P.filter(p=>favs.has(p.slug));
+b.innerHTML=it.length?`<div class="cgrid">${it.map(p=>`<a class="ci" href="#collection/${p.slug}"><div class="cv">${svg(p)}</div><h3>${p.name}</h3></a>`).join('')}</div>`:`<div class="favmsg"><p>Aucun favori pour l'instant. Touche le cœur sur une fiche pour l'ajouter.</p><a class="btn bs" href="#collection" data-go="collection" style="margin-top:16px">Voir la collection</a></div>`;}
 
 P=JSON.parse(document.getElementById('pdata').textContent).items;
-function show(v){if(!['home','studio','fiches','collection','atelier'].includes(v))v='home';document.querySelectorAll('.v').forEach(e=>e.classList.toggle('on',e.classList.contains('v-'+v)));window.scrollTo(0,0);}
+function show(v){if(!['home','studio','fiches','collection','atelier','apprendre','favoris'].includes(v))v='home';document.querySelectorAll('.v').forEach(e=>e.classList.toggle('on',e.classList.contains('v-'+v)));window.scrollTo(0,0);document.body.dataset.v=v;const tm=v=='atelier'?'collection':v;document.querySelectorAll('.bnav a').forEach(a=>a.classList.toggle('on',a.dataset.t==tm));}
 window.addEventListener('hashchange',route);
 const mn=document.getElementById('menu');
 function openMenu(o){mn.hidden=!o;}
 document.getElementById('menubtn').onclick=()=>openMenu(true);
 document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g&&g.tagName!='A')location.hash=g.dataset.go;
 if(e.target.closest('#menu [data-close],#menu [data-go],#menu [data-auth]'))openMenu(false);});
-initColl();route();fetch('pastries.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&Array.isArray(d.items)&&d.items.length){P=d.items;renderColl();route();}}).catch(()=>{});
+$('#hbg').innerHTML=heroScene();INSP=JSON.parse(document.getElementById('pdata').textContent).inspiration||'';renderInsp();initColl();route();fetch('pastries.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&Array.isArray(d.items)&&d.items.length){P=d.items;INSP=d.inspiration||INSP;renderColl();renderInsp();route();}}).catch(()=>{});
 if(sb)sb.auth.onAuthStateChange((_e,s)=>{curUser=s?s.user:null;loadFavs();});
-['hero','cookies','yaourt','eclair','tarte'].forEach(k=>{const i=new Image();i.onload=()=>document.documentElement.classList.add('has-'+k);i.src='photo-'+k+'.jpg';});
+['boutique','cookies','yaourt','eclair','tarte'].forEach(k=>{const i=new Image();i.onload=()=>document.documentElement.classList.add('has-'+k);i.src='photo-'+k+'.jpg';});
 renderQ();
 </script>
 </body>
