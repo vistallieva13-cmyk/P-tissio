@@ -96,36 +96,65 @@ dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
 }
 @media (max-width:860px){.dd{display:none}.btn.sm{margin-left:8px}.rec{grid-template-columns:1fr!important}}
 
+
+.st{background:#14213D;color:#F3EBDD;padding:64px 40px;outline:1px solid #B08D57;outline-offset:-12px}
+.st h2{font-size:48px;font-weight:500;margin-bottom:12px}
+.stn{color:#D9CBB0;font-size:14px;margin-bottom:32px;max-width:640px}
+.stq{font-size:36px;font-weight:500;margin:8px 0 24px;color:#F3EBDD}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.opt{background:transparent;border:1px solid #B08D57;color:#F3EBDD;padding:16px 20px;min-height:56px;font:500 16px 'DM Sans',sans-serif;text-align:left;cursor:pointer}
+.opt:hover{background:#1F2F55}
+.back{background:none;border:0;color:#D9BC87;margin-top:20px;font:500 14px 'DM Sans',sans-serif;cursor:pointer;padding:8px 0}
+.res ul{margin:12px 0 20px;padding-left:20px;color:#F3EBDD}
+.res .btn{border:0;cursor:pointer;background:#D9BC87;color:#14213D;margin:0 8px 8px 0;font-family:inherit}
+.res .btn.o{background:transparent;border:1px solid #D9BC87;color:#D9BC87}
+@media (max-width:860px){.opts{grid-template-columns:1fr}.st{padding:40px 24px}.st h2{font-size:34px}.stq{font-size:28px}}
+
+.v{display:none}.v.on{display:block}
+.menubtn{margin-left:0!important;cursor:pointer}
+.menu[hidden]{display:none}
+.menu{position:fixed;inset:0;z-index:50}
+.mbg{position:absolute;inset:0;background:rgba(20,33,61,.55)}
+.mp{position:absolute;right:0;top:0;bottom:0;width:min(380px,88vw);background:#F3EBDD;padding:80px 32px 32px;display:flex;flex-direction:column;gap:6px;box-shadow:-20px 0 40px rgba(20,33,61,.25);font-family:'DM Sans',Arial,sans-serif;color:#14213D}
+.mp>a{font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;color:#14213D;text-decoration:none;padding:10px 0;border-bottom:1px solid #D8C7A5}
+.mx{position:absolute;top:18px;right:24px;font-size:40px;line-height:1;background:none;border:0;cursor:pointer;color:#14213D}
+.mauth{margin-top:28px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.mauth .lnk{margin:0!important;color:#14213D;text-decoration:underline}
+.mauth .btn.sm{margin-left:0}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.tile{display:block;text-decoration:none;color:#14213D;background:#FBF7EF;border:1px solid #B08D57;padding:40px}
+.tile:hover{background:#fff}
+.ic2{font-size:44px}
+.tile h3{font-size:36px;margin:12px 0 8px}
+.back2{display:inline-block;margin-bottom:24px;color:#14213D;font-size:14px}
+.opt{display:flex;align-items:center;gap:14px}
+.ic{width:42px;height:42px;border-radius:50%;background:#F3EBDD;display:flex;align-items:center;justify-content:center;font-size:22px;flex:none}
+@media (max-width:860px){.tiles{grid-template-columns:1fr}.tile{padding:28px}}
 </style>
 </head>
 <body>
 <div class="pg">
+<div id="menu" class="menu" hidden><div class="mbg" data-close></div><nav class="mp">
+<button class="mx" data-close aria-label="Fermer">×</button>
+<a href="#home" data-go="home">Accueil</a>
+<a href="#studio" data-go="studio">Créer une recette</a>
+<a href="#fiches" data-go="fiches">Fiches mémo</a>
+<div class="mauth" id="auth"><a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S'inscrire</a></div>
+</nav></div>
 <div class="wrap">
 <div class="nav">
-<span class="logo">Pâtissio</span>
-<span class="navr">
-<details class="dd"><summary>Idées recettes</summary><div class="ddm">
-<b>Amateurs</b>
-<a href="#recettes">Cookies moelleux</a>
-<a href="#recettes">Gâteau au yaourt</a>
-<b>Revisitées</b>
-<a href="#recettes">Éclair au yuzu</a>
-<a href="#recettes">Tarte citron déstructurée</a>
-<a class="all" href="#recettes">Toutes les fiches mémo →</a>
-</div></details>
-<a class="lnk" href="#parcours">Parcours</a>
-<span id="auth"><a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S'inscrire</a></span>
-</span>
+<span class="logo" data-go="home" style="cursor:pointer">Pâtissio</span>
+<button class="btn b2 sm menubtn" id="menubtn" aria-label="Ouvrir le menu">Menu ☰</button>
 </div>
-
+<div class="v v-home on">
 <div class="hero">
 <div>
 <p class="eyebrow">L'art de la pâtisserie</p>
 <h1>La pâtisserie, <em>classique</em> ou <em>revisitée</em>.</h1>
 <p class="sub">Des recettes pensées pour les amateurs, pas à pas. Et quand tu as pris confiance, des versions revisitées pour surprendre tout le monde.</p>
 <div class="ctas">
-<a class="btn b1" href="#telecharger">Télécharger l'appli</a>
-<a class="btn b2" href="#recettes">Voir des recettes</a>
+<a class="btn b1" href="#studio" data-go="studio">Créer ma pâtisserie</a>
+<a class="btn b2" href="#fiches" data-go="fiches">Fiches mémo</a>
 </div>
 </div>
 <div class="phone">
@@ -137,9 +166,9 @@ dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
 </div>
 </div>
 </div>
-</div>
+</div></div>
 
-<div class="wrap" id="parcours">
+<div class="wrap v v-home on" id="parcours">
 <div class="paths">
 <div class="card" style="background:#E7DAC3;color:#14213D">
 <h2>Pour les amateurs</h2>
@@ -162,14 +191,33 @@ dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
 </div>
 </div>
 
-<div class="wrap sec" id="recettes">
-<p class="eyebrow">Idées recettes</p>
+<div class="wrap sec v v-studio" id="studio">
+<div class="st">
+<a class="back" href="#home" data-go="home" style="display:inline-block;margin:0 0 16px">← Accueil</a>
+<p class="eyebrow" style="color:#D9BC87">Studio de Création · version démo</p>
+<h2>Que souhaitez-vous pâtisser aujourd'hui ?</h2>
+<p class="stn">Réponds à quelques questions : l'assistant te propose une pâtisserie. C'est un questionnaire guidé qui s'appuie sur un catalogue et des règles, sans rien inventer. Pour l'instant le catalogue ne compte que 4 recettes d'exemple non validées.</p>
+<div id="stbox"></div>
+</div>
+</div>
+
+<div class="wrap sec v v-fiches" id="recettes">
+<a class="back2" href="#home" data-go="home">← Accueil</a>
+<p class="eyebrow">Fiches mémo</p>
 <h2 class="t">Des fiches mémo à imprimer</h2>
-<p class="sub">Clique sur « Fiche mémo PDF » : la fiche s'ouvre prête à imprimer, ou à enregistrer en PDF depuis la fenêtre d'impression.</p>
+<p class="sub">Clique sur « Fiche mémo PDF » : la fiche s'ouvre prête à imprimer, ou à enregistrer en PDF depuis la fenêtre d'impression. Ces quatre recettes sont des exemples non validés, en attendant ta bibliothèque vérifiée.</p>
 <div class="rec" style="grid-template-columns:repeat(2,1fr)"><div class="rc"><div class="ph" style="background:#D8C3A0"></div><div class="bd"><span class="tag ">Amateur</span><h3>Cookies moelleux</h3><p>30 min · Facile</p><p style="margin-top:8px;color:#4A5470">Dorés autour, tendres au centre, avec de vrais morceaux de chocolat.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="cookies">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#E7DAC3"></div><div class="bd"><span class="tag ">Amateur</span><h3>Gâteau au yaourt</h3><p>45 min · Très facile</p><p style="margin-top:8px;color:#4A5470">Le classique de l'enfance, qui se mesure avec le pot de yaourt.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="yaourt">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#14213D"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Éclair au yuzu</h3><p>2 h · Confirmé</p><p style="margin-top:8px;color:#4A5470">Pâte à choux et crème acidulée au yuzu, glaçage brillant.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="eclair">Fiche mémo PDF</button></div></div><div class="rc"><div class="ph" style="background:#B9A57F"></div><div class="bd"><span class="tag r">Revisitée</span><h3>Tarte citron déstructurée</h3><p>2 h 30 · Confirmé</p><p style="margin-top:8px;color:#4A5470">Sablé en éclats, crème citron et meringues croquantes.</p><button class="btn b2 sm" style="margin-top:20px" data-sheet="tarte">Fiche mémo PDF</button></div></div></div>
 </div>
 
-<div class="wrap sec">
+<div class="wrap sec v v-home on">
+<h2 class="t" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:54px;font-weight:500;margin:0 0 40px">Que veux-tu faire ?</h2>
+<div class="tiles">
+<a class="tile" href="#studio" data-go="studio"><span class="ic2">🧁</span><h3>Créer une recette</h3><p>Réponds à quelques questions : l'assistant te propose une pâtisserie.</p></a>
+<a class="tile" href="#fiches" data-go="fiches"><span class="ic2">📄</span><h3>Fiches mémo</h3><p>Des recettes à imprimer ou à enregistrer en PDF.</p></a>
+</div>
+</div>
+
+<div class="wrap sec v v-home on">
 <h2 class="t">Tout pour réussir, même le jour J</h2>
 <div class="feat">
 <div><h3>Pas à pas</h3><p>Des étapes claires, une à la fois, mains dans la farine.</p></div>
@@ -179,7 +227,7 @@ dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
 </div>
 </div>
 
-<div class="wrap sec" id="fonctionnement">
+<div class="wrap sec v v-home on" id="fonctionnement">
 <h2 class="t">Comment ça marche</h2>
 <div class="steps">
 <div><div class="num">1</div><h3 style="font-size:30px;margin-bottom:8px">Choisis ton envie</h3><p>Un gâteau d'anniversaire, un goûter, un dessert chic.</p></div>
@@ -188,16 +236,19 @@ dialog .btn{width:100%;margin:24px 0 0;border:0;cursor:pointer}
 </div>
 </div>
 
-<div class="wrap" id="telecharger">
+<div class="wrap v v-home on" id="telecharger">
 <div class="final">
 <h2>Prêt à passer au four ?</h2>
-<p>Rejoins Pâtissio et prépare ta prochaine pâtisserie dès aujourd'hui.</p>
-<a class="btn b1" style="background:#D9BC87;color:#14213D" href="#">Télécharger l'appli</a>
+<p>Crée ton compte pour retrouver tes créations.</p>
+<a class="btn b1" style="background:#D9BC87;color:#14213D" href="#" data-auth="signup">Créer mon compte</a>
 </div>
+</div>
+<div class="wrap">
 <div class="foot"><span>© Pâtissio</span><span>[CONTACT / RÉSEAUX]</span></div>
 </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <dialog id="dlg">
 <div class="tabs"><button class="on" data-tab="login">Connexion</button><button data-tab="signup">Inscription</button></div>
 <form id="form">
@@ -220,8 +271,58 @@ function setMode(m){mode=m;document.querySelectorAll('[data-tab]').forEach(b=>b.
 document.querySelectorAll('[data-auth]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();setMode(a.dataset.auth);dlg.showModal();}));
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.tab)));
 dlg.addEventListener('click',e=>{if(e.target==dlg)dlg.close()});
-$('#form').addEventListener('submit',e=>{e.preventDefault();const n=$('#n').value||$('#e').value.split('@')[0];$('#auth').innerHTML='<span style="margin-left:24px;font-size:14px">Bonjour, '+n.replace(/[<>&]/g,'')+'</span>';dlg.close();});
-document.querySelectorAll('[data-sheet]').forEach(b=>b.addEventListener('click',()=>{const r=R[b.dataset.sheet];$('#sheet').innerHTML='<div class="ft" style="margin:0 0 8px">Pâtissio · Fiche mémo</div><h1>'+r.t+'</h1><div class="meta">'+r.m+'</div><div class="cols"><div><h2>Ingrédients</h2><ul>'+r.i.map(x=>'<li>'+x+'</li>').join('')+'</ul></div><div><h2>Préparation</h2><ol>'+r.s.map(x=>'<li>'+x+'</li>').join('')+'</ol></div></div><div class="tip"><b>Astuce :</b> '+r.a+'</div><div class="ft">Pâtissio</div>';window.print();}));
+const sb=window.supabase?window.supabase.createClient('https://vkcsuoqujvttswvqyiar.supabase.co','sb_publishable_3wv-JcuDGM5P_m6jiqHaNg_7joN9NDX'):null;
+const esc=t=>String(t).replace(/[<>&"']/g,'');
+function bindAuth(){document.querySelectorAll('[data-auth]').forEach(a=>a.onclick=e=>{e.preventDefault();setMode(a.dataset.auth);dlg.showModal();});}
+function showUser(u){const a=$('#auth');if(u){const n=(u.user_metadata&&u.user_metadata.display_name)||(u.email||'').split('@')[0];a.innerHTML='<span style="margin-left:24px;font-size:14px">Bonjour, '+esc(n)+'</span><a class="lnk" href="#" id="out">Se déconnecter</a>';$('#out').onclick=async e=>{e.preventDefault();await sb.auth.signOut();};}else{a.innerHTML='<a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S\'inscrire</a>';bindAuth();}}
+const ERR={'Invalid login credentials':'E-mail ou mot de passe incorrect.','Email not confirmed':"Confirme d'abord ton adresse avec l'e-mail reçu.",'User already registered':'Un compte existe déjà avec cet e-mail.'};
+$('#form').addEventListener('submit',async e=>{e.preventDefault();const msg=$('#msg');if(!sb){msg.textContent='Service de connexion indisponible. Recharge la page.';return;}
+const email=$('#e').value.trim(),pw=$('#p').value;msg.textContent='Un instant…';
+try{if(mode=='signup'){const {data,error}=await sb.auth.signUp({email,password:pw,options:{data:{display_name:$('#n').value.trim()||null},emailRedirectTo:location.origin+location.pathname}});if(error)throw error;if(data.session){dlg.close();}else{msg.textContent="Compte créé. Ouvre l'e-mail de confirmation, puis reviens te connecter.";}}
+else{const {error}=await sb.auth.signInWithPassword({email,password:pw});if(error)throw error;dlg.close();}}
+catch(err){msg.textContent=ERR[err.message]||err.message;}});
+if(sb)sb.auth.onAuthStateChange((_ev,session)=>showUser(session?session.user:null));
+document.querySelectorAll('[data-sheet]').forEach(b=>b.addEventListener('click',()=>{const r=R[b.dataset.sheet];$('#sheet').innerHTML='<div class="ft" style="margin:0 0 8px">Pâtissio · Fiche mémo · recette d\'exemple, non validée</div><h1>'+r.t+'</h1><div class="meta">'+r.m+'</div><div class="cols"><div><h2>Ingrédients</h2><ul>'+r.i.map(x=>'<li>'+x+'</li>').join('')+'</ul></div><div><h2>Préparation</h2><ol>'+r.s.map(x=>'<li>'+x+'</li>').join('')+'</ol></div></div><div class="tip"><b>Astuce :</b> '+r.a+'</div><div class="ft">Pâtissio</div>';window.print();}));
+
+const Q=[
+{k:'lvl',q:"Quel est ton niveau en pâtisserie ?",o:[['Débutant',1],['Je me débrouille',2],['Confirmé',3]]},
+{k:'time',q:"De combien de temps disposes-tu ?",o:[["Moins d'1 h",60],['1 à 2 h',120],['Plus de 2 h',999]]},
+{k:'sav',q:"Quelle saveur te fait envie ?",o:[['Chocolat','chocolat'],['Citron et agrumes','citron'],['Vanille, nature','vanille'],['Peu importe','']]},
+{k:'tex',q:"Quelle texture recherches-tu ?",o:[['Moelleux','moelleux'],['Crémeux','crémeux'],['Croustillant','croustillant'],['Aérien','aérien']]},
+{k:'sty',q:"Plutôt classique ou revisité ?",o:[['Classique','classique'],['Revisité','revisité'],['Peu importe','']]},
+{k:'all',q:"As-tu une allergie ou une restriction ?",o:[['Aucune',''],['Gluten','gluten'],['Œufs','oeufs'],['Produits laitiers','lait']]}];
+const M={
+cookies:{n:'Cookies moelleux',l:1,m:30,s:['chocolat'],t:['moelleux'],y:'classique',a:['gluten','oeufs','lait']},
+yaourt:{n:'Gâteau au yaourt',l:1,m:45,s:['vanille','citron'],t:['moelleux'],y:'classique',a:['gluten','oeufs','lait']},
+eclair:{n:'Éclair au yuzu',l:3,m:120,s:['citron'],t:['crémeux','croustillant'],y:'revisité',a:['gluten','oeufs','lait']},
+tarte:{n:'Tarte citron déstructurée',l:3,m:180,s:['citron'],t:['crémeux','croustillant','aérien'],y:'revisité',a:['gluten','oeufs','lait']}};
+let step=0,ans={};
+function renderQ(){const b=$('#stbox');if(step>=Q.length)return renderRes();const q=Q[step];
+b.innerHTML='<p class="eyebrow" style="color:#D9BC87">Question '+(step+1)+' sur '+Q.length+'</p><h3 class="stq">'+q.q+'</h3><div class="opts">'+q.o.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="ic">'+IC[q.k][i]+'</span><span>'+o[0]+'</span></button>').join('')+'</div>'+(step?'<button class="back" id="stback">← Retour</button>':'');
+b.querySelectorAll('.opt').forEach(x=>x.onclick=()=>{ans[q.k]=q.o[+x.dataset.i][1];step++;renderQ();});
+if(step)$('#stback').onclick=()=>{step--;renderQ();};}
+function renderRes(){const b=$('#stbox');const ok=Object.keys(M).filter(k=>!ans.all||!M[k].a.includes(ans.all));
+const again='<button class="btn o" id="stre">Recommencer</button>';
+if(!ok.length){b.innerHTML='<div class="res"><h3 class="stq">Aucune recette du catalogue ne convient</h3><p>Les 4 recettes d\'exemple contiennent toutes du gluten, des œufs et des produits laitiers. Ta bibliothèque vérifiée pourra proposer des versions adaptées.</p><p style="margin-top:20px">'+again+'</p></div>';$('#stre').onclick=()=>{step=0;ans={};renderQ();};return;}
+const rank=ok.map(k=>{const m=M[k],fit=m.l<=ans.lvl&&m.m<=ans.time,sv=ans.sav&&m.s.includes(ans.sav),tx=m.t.includes(ans.tex),st=ans.sty&&m.y==ans.sty;return{k,fit,sv,tx,st,sc:(fit?3:0)+(sv?2:0)+(tx?2:0)+(st?1:0)};}).sort((a,c)=>c.sc-a.sc);
+const t=rank[0],m=M[t.k],why=[];
+if(t.fit)why.push('adaptée à ton niveau et à ton temps disponible');else why.push('elle demande un peu plus de niveau ou de temps que ce que tu as indiqué');
+if(t.sv)why.push('saveur : '+ans.sav);if(t.tx)why.push('texture : '+ans.tex);if(t.st)why.push('style : '+ans.sty);
+const alt=rank[1]?'<p style="margin-top:16px;color:#D9CBB0">Autre idée : '+M[rank[1].k].n+'</p>':'';
+b.innerHTML='<div class="res"><p class="eyebrow" style="color:#D9BC87">Ma proposition</p><h3 class="stq">'+m.n+'</h3><p>'+R[t.k].m+'</p><ul>'+why.map(w=>'<li>'+w+'</li>').join('')+'</ul><p style="color:#D9CBB0;font-size:14px;margin-bottom:20px">Recette d\'exemple, non validée : à remplacer par ta bibliothèque vérifiée.</p><button class="btn" id="stpdf">Fiche mémo PDF</button>'+again+alt+'</div>';
+$('#stpdf').onclick=()=>document.querySelector('#recettes [data-sheet="'+t.k+'"]').click();
+$('#stre').onclick=()=>{step=0;ans={};renderQ();};}
+const _ic=1;
+const IC={lvl:['🌱','🥄','👩‍🍳'],time:['⚡','⏳','🕰️'],sav:['🍫','🍋','🍦','✨'],tex:['🧁','🍮','🍪','☁️'],sty:['🥐','🎨','✨'],all:['✅','🌾','🥚','🥛']};
+function show(v){if(!['home','studio','fiches'].includes(v))v='home';document.querySelectorAll('.v').forEach(e=>e.classList.toggle('on',e.classList.contains('v-'+v)));window.scrollTo(0,0);}
+window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+const mn=document.getElementById('menu');
+function openMenu(o){mn.hidden=!o;}
+document.getElementById('menubtn').onclick=()=>openMenu(true);
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g&&g.tagName!='A')location.hash=g.dataset.go;
+if(e.target.closest('#menu [data-close],#menu [data-go],#menu [data-auth]'))openMenu(false);});
+show(location.hash.slice(1));
+renderQ();
 </script>
 </body>
 </html>
