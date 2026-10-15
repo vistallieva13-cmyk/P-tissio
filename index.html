@@ -162,13 +162,102 @@ dialog{border-radius:22px}
 .has-eclair .rph.ph-eclair{display:block}
 .has-tarte .rph.ph-tarte{display:block}
 .rc .ph{height:200px}
+
+.st{background:#FFFCF6!important;color:#3A2419!important;outline:none!important;border:1px solid #E6D6BC;padding:48px;box-shadow:0 20px 50px rgba(58,36,25,.08)}
+.pg .st h2{color:#3A2419;font-size:44px}
+.pg .stn{color:#6B5546}
+.st .eyebrow{color:#8A5A2B!important}
+.st .back{color:#8A5A2B}
+.bar{display:flex;gap:6px;margin:8px 0 28px}
+.bar i{flex:1;height:3px;border-radius:3px;background:#E6D6BC}
+.bar i.d{background:#B07A3C}
+.sh{display:flex;align-items:center;gap:10px;color:#8A5A2B;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500}
+.si svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block}
+.pg .stq{color:#3A2419;font-size:34px;margin:14px 0 24px}
+.st .opts{grid-template-columns:1fr;gap:10px;max-width:640px}
+.st .opt{background:#fff;border:1px solid #E6D6BC;color:#3A2419;border-radius:14px;padding:16px 18px;gap:14px;font-size:16px}
+.st .opt:hover{border-color:#B07A3C;background:#FFFCF6}
+.st .opt.on{border-color:#3A2419;background:#FAF4EA}
+.rd{width:20px;height:20px;border-radius:50%;border:1.5px solid #B07A3C;flex:none;position:relative;box-sizing:border-box}
+.opt.on .rd::after{content:"";position:absolute;inset:3px;border-radius:50%;background:#3A2419}
+.badge{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border:1px solid #B07A3C;color:#8A5A2B;padding:5px 12px;border-radius:999px;margin-bottom:20px}
+.rmeta{color:#6B5546}
+.rl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A5A2B;margin:24px 0 8px}
+.chk{list-style:none;margin:0;padding:0}
+.chk li{padding:10px 0 10px 28px;position:relative;border-bottom:1px solid #EFE3CF}
+.chk li::before{content:"✓";position:absolute;left:0;color:#B07A3C;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-size:13px;border:1px solid #E6D6BC;border-radius:999px;padding:6px 12px;color:#6B5546;background:#fff}
+.act{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.act .btn{cursor:pointer;font-family:inherit;margin:0}
+.act .btn.bp{background:#3A2419;color:#FAF4EA;border:0}
+.act .btn.bs{background:transparent;color:#3A2419;border:1px solid #3A2419}
+@media (max-width:860px){.st{padding:28px 20px}.pg .st h2{font-size:32px}.pg .stq{font-size:26px}}
+.pg .rl{margin:24px 0 8px}
+.pg .ctitle{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:500;font-size:68px;margin:0 0 8px;color:#4B2A1E}
+.pg .csub{color:#6B5546;margin-bottom:40px}
+.ctools{display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between;border-bottom:1px solid #DCCAAC;padding-bottom:16px;margin-bottom:56px}
+#ctabs button{background:none;border:0;font:500 13px 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6B5546;padding:8px 14px 8px 0;margin-right:10px;cursor:pointer;border-bottom:2px solid transparent}
+#ctabs button.on{color:#3A2419;border-bottom-color:#B07A3C}
+#cq{border:0;border-bottom:1px solid #B07A3C;background:transparent;font:16px 'DM Sans',sans-serif;padding:8px 2px;color:#3A2419;min-width:220px;outline:none}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:72px 40px}
+.ci{display:block;text-decoration:none;color:#4B2A1E;text-align:center}
+.cv svg{width:100%;height:auto;display:block;transition:transform .5s ease}
+.ci:hover .cv svg{transform:translateY(-5px)}
+.pg .ci h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:21px;text-transform:uppercase;letter-spacing:.08em;margin-top:10px;line-height:1.2}
+.cnone{grid-column:1/-1;text-align:center;color:#6B5546}
+.fiche{position:fixed;inset:0;z-index:40;background:#FAF4EA;overflow:auto}
+.fiche[hidden]{display:none}
+.fi{max-width:760px;margin:0 auto;padding:24px 24px 96px}
+.ftop{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ftop a{color:#3A2419;font-size:14px}
+#fav{background:none;border:0;font-size:32px;color:#B07A3C;cursor:pointer;line-height:1}
+#fav.on{color:#B0213C}
+.fsv{max-width:440px;margin:0 auto}.fsv svg{width:100%;height:auto;display:block}
+.pg .fh{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:56px;text-align:center;margin:4px 0 12px;color:#3A2419}
+.pg .fmeta{text-align:center;color:#6B5546;font-size:14px}
+.pg .fdemo{text-align:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8A5A2B;margin:14px 0}
+.pg .fdesc{text-align:center;font-size:18px;max-width:560px;margin:0 auto 40px}
+.fcols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.pg .fh2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;margin:40px 0 12px;color:#3A2419}
+.fcols .fh2{margin-top:0}
+.pg .fh3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:30px;margin:8px 0 16px}
+.comp{margin:0;padding-left:20px}.comp li{padding:4px 0}
+.step{display:flex;align-items:center;gap:16px}
+.step button{width:40px;height:40px;border-radius:50%;border:1px solid #B07A3C;background:#fff;font-size:20px;cursor:pointer;color:#3A2419}
+.step b{font-size:22px;min-width:28px;text-align:center}
+.pg .fnote{color:#6B5546;font-size:14px;margin-top:10px}
+.pg #ing h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A5A2B;margin:20px 0 6px;font-weight:700}
+.il,.st2{list-style:none;margin:0;padding:0}
+.il li,.st2 li{padding:8px 0;border-bottom:1px solid #EFE3CF}
+.st2{counter-reset:s}.st2 li{counter-increment:s}
+.st2 li span::before{content:counter(s) ".  ";font-family:'Cormorant Garamond',serif;font-weight:700;color:#B07A3C}
+.ck{display:none;margin-right:10px;accent-color:#3A2419}
+.fiche.cook .ck{display:inline-block}
+.fiche.cook .ck:checked+span{opacity:.4;text-decoration:line-through}
+.fact{display:flex;flex-wrap:wrap;gap:12px;margin-top:48px}
+.fact .btn{cursor:pointer;font-family:inherit}
+.fact .btn.bp{background:#3A2419;color:#FAF4EA;border:0}
+.fact .btn.bs{background:transparent;color:#3A2419;border:1px solid #3A2419}
+.atg{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:24px}
+.atv svg{width:100%;height:auto;display:block}
+.al{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A5A2B;margin-bottom:16px}
+.al select{display:block;width:100%;margin-top:6px;height:46px;border:1px solid #DCCAAC;background:#fff;border-radius:12px;padding:0 12px;font:16px 'DM Sans',sans-serif;color:#3A2419;text-transform:none;letter-spacing:0}
+.atc{margin-top:40px;border-top:1px solid #DCCAAC;padding-top:32px}
+.warn{margin:0;padding-left:20px;color:#8A3B1F}
+.atc .act .btn{cursor:pointer;background:#3A2419;color:#FAF4EA;border:0;font-family:inherit}
+@media (max-width:860px){.pg .ctitle{font-size:46px}.cgrid{grid-template-columns:1fr 1fr;gap:48px 16px}.pg .ci h3{font-size:16px}.pg .fh{font-size:38px}.fcols,.atg{grid-template-columns:1fr}#cq{min-width:0;width:100%}}
+.tiles{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))!important}
+
 </style>
 </head>
 <body>
 <div class="pg">
+<div id="fiche" class="fiche" hidden></div>
 <div id="menu" class="menu" hidden><div class="mbg" data-close></div><nav class="mp">
 <button class="mx" data-close aria-label="Fermer">×</button>
 <a href="#home" data-go="home">Accueil</a>
+<a href="#collection" data-go="collection">La collection</a>
 <a href="#studio" data-go="studio">Créer une recette</a>
 <a href="#fiches" data-go="fiches">Fiches mémo</a>
 <div class="mauth" id="auth"><a class="lnk" href="#" data-auth="login">Se connecter</a><a class="btn b1 sm" href="#" data-auth="signup">S'inscrire</a></div>
@@ -226,13 +315,15 @@ dialog{border-radius:22px}
 <div class="wrap sec v v-studio" id="studio">
 <div class="st">
 <a class="back" href="#home" data-go="home" style="display:inline-block;margin:0 0 16px">← Accueil</a>
-<p class="eyebrow" style="color:#E2BE8A">Studio de Création · version démo</p>
+<p class="eyebrow" style="color:#E2BE8A">Studio de Création</p>
 <h2>Que souhaitez-vous pâtisser aujourd'hui ?</h2>
 <p class="stn">Réponds à quelques questions : l'assistant te propose une pâtisserie. C'est un questionnaire guidé qui s'appuie sur un catalogue et des règles, sans rien inventer. Pour l'instant le catalogue ne compte que 4 recettes d'exemple non validées.</p>
 <div id="stbox"></div>
 </div>
 </div>
 
+<div class="wrap sec v v-collection" id="collection"><a class="back2" href="#home" data-go="home">← Accueil</a><h2 class="ctitle">La Collection</h2><p class="csub">Des pâtisseries à découvrir en coupe, à réaliser ou à réinventer.</p><div class="ctools"><div id="ctabs"></div><input id="cq" type="search" placeholder="Rechercher : nom, ingrédient, saveur" aria-label="Rechercher"></div><div class="cgrid" id="cgrid"></div></div>
+<div class="wrap sec v v-atelier" id="atelier"><div id="atbox"></div></div>
 <div class="wrap sec v v-fiches" id="recettes">
 <a class="back2" href="#home" data-go="home">← Accueil</a>
 <p class="eyebrow">Fiches mémo</p>
@@ -244,6 +335,7 @@ dialog{border-radius:22px}
 <div class="wrap sec v v-home on">
 <h2 class="t" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:54px;font-weight:500;margin:0 0 40px">Que veux-tu faire ?</h2>
 <div class="tiles">
+<a class="tile" href="#collection" data-go="collection"><span class="ic2">🍰</span><h3>La collection</h3><p>Parcours des pâtisseries en coupe, puis réalise-les ou réinvente-les.</p></a>
 <a class="tile" href="#studio" data-go="studio"><span class="ic2">🧁</span><h3>Créer une recette</h3><p>Réponds à quelques questions : l'assistant te propose une pâtisserie.</p></a>
 <a class="tile" href="#fiches" data-go="fiches"><span class="ic2">📄</span><h3>Fiches mémo</h3><p>Des recettes à imprimer ou à enregistrer en PDF.</p></a>
 </div>
@@ -281,6 +373,27 @@ dialog{border-radius:22px}
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script type="application/json" id="pdata">{"v":1,"statut":"demo","items":[
+{"slug":"tarte-citron","name":"Tarte au citron","cat":"classique","s":["citron"],"desc":"Un sablé fin, une crème citron franche et une meringue légèrement dorée.","portions":6,"diff":2,"prep":60,"rest":180,"cook":20,"temp":180,"shape":"tarte","top":"meringue","layers":[{"t":"sucree","h":20},{"t":"creme_citron","h":46}],
+"comps":[{"n":"Pâte sucrée","i":[["farine",250,"g"],["beurre",125,"g"],["sucre glace",90,"g"],["œuf",1,""],["sel",1,"pincée"]]},{"n":"Crème au citron","i":[["jus de citron",120,"ml"],["zeste de citron",2,"citrons"],["sucre",120,"g"],["œufs",3,""],["beurre",150,"g"]]},{"n":"Meringue","i":[["blancs d'œufs",3,""],["sucre",150,"g"]]}],
+"steps":["Mélanger farine, sucre glace, sel et beurre froid en dés jusqu'à obtenir un sable, puis ajouter l'œuf. Former une boule et la laisser 1 h au frais.","Étaler la pâte, foncer un cercle de 22 cm et piquer le fond. Cuire à blanc 20 min à 180 °C.","Fouetter jus, zestes, sucre et œufs au bain-marie jusqu'à 82 °C.","Laisser tiédir à 40 °C, ajouter le beurre en dés et mixer. Verser dans le fond de tarte et laisser prendre 2 h au frais.","Monter les blancs en ajoutant le sucre en trois fois. Pocher sur la tarte et colorer au chalumeau."]},
+{"slug":"eclair-chocolat","name":"Éclair au chocolat","cat":"classique","s":["chocolat"],"desc":"Une pâte à choux croustillante, une crème pâtissière au chocolat noir et un glaçage brillant.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","layers":[{"t":"choux","h":14},{"t":"creme_choc","h":38},{"t":"choux","h":16,"lock":true}],
+"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème pâtissière au chocolat","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["chocolat noir",150,"g"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],
+"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : fouetter jaunes, sucre et fécule, verser le lait bouillant et recuire en fouettant 2 min. Hors du feu, ajouter le chocolat. Filmer au contact et refroidir.","Garnir les éclairs. Verser la crème chaude sur le chocolat, lisser, puis glacer."]},
+{"slug":"eclair-yuzu","name":"Éclair au yuzu","cat":"revisitee","s":["yuzu","agrumes"],"desc":"Le classique réinventé avec une crème acidulée au yuzu et un glaçage pâle.","portions":8,"diff":3,"prep":60,"rest":120,"cook":35,"temp":190,"shape":"dome","top":"miroir","tc":"#F2E5A6","layers":[{"t":"choux","h":14},{"t":"creme_yuzu","h":38},{"t":"choux","h":16,"lock":true}],
+"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème au yuzu","i":[["jus de yuzu",80,"ml"],["sucre",80,"g"],["œufs",2,""],["beurre",100,"g"]]},{"n":"Glaçage","i":[["sucre glace",150,"g"],["jus de yuzu",30,"ml"]]}],
+"steps":["Porter à ébullition eau, lait, beurre, sucre et sel. Ajouter la farine d'un coup et dessécher 2 min.","Hors du feu, incorporer les œufs un à un.","Pocher des bâtons de 12 cm. Cuire 30 à 35 min à 190 °C, sans ouvrir le four les 20 premières minutes.","Crème : chauffer jus, sucre et œufs au bain-marie en fouettant jusqu'à épaississement. Hors du feu, ajouter le beurre froid et mixer. Refroidir.","Garnir les éclairs, puis les glacer avec sucre glace et jus de yuzu."]},
+{"slug":"paris-brest-pistache","name":"Paris-Brest pistache framboise","cat":"revisitee","s":["pistache","framboise"],"desc":"La couronne de choux, une crème mousseline à la pistache et un cœur de framboise.","portions":6,"diff":3,"prep":90,"rest":120,"cook":40,"temp":190,"shape":"dome","top":"pistache","layers":[{"t":"choux","h":16},{"t":"creme_pistache","h":38},{"t":"insert_fram","h":8},{"t":"choux","h":16,"lock":true}],
+"comps":[{"n":"Pâte à choux","i":[["eau",125,"ml"],["lait",125,"ml"],["beurre",100,"g"],["sucre",5,"g"],["sel",1,"pincée"],["farine",150,"g"],["œufs",4,""]]},{"n":"Crème mousseline pistache","i":[["lait",500,"ml"],["jaunes d'œufs",4,""],["sucre",100,"g"],["fécule de maïs",40,"g"],["beurre",150,"g"],["pâte de pistache",60,"g"]]},{"n":"Insert framboise","i":[["framboises",200,"g"],["sucre",60,"g"],["jus de citron",5,"ml"]]},{"n":"Finition","i":[["pistaches concassées",40,"g"]]}],
+"steps":["Réaliser la pâte à choux comme pour des éclairs. Pocher une couronne de 18 cm et cuire 35 à 40 min à 190 °C.","Insert : cuire framboises, sucre et jus de citron 10 min, puis refroidir.","Crème : cuire la crème pâtissière (lait, jaunes, sucre, fécule), la refroidir, puis la fouetter avec le beurre pommade et la pâte de pistache.","Couper la couronne en deux. Déposer l'insert, pocher la crème, refermer et décorer de pistaches."]},
+{"slug":"noir-noisette","name":"Noir & Noisette","cat":"originale","s":["chocolat","noisette"],"desc":"Un biscuit chocolat, un croustillant praliné et une mousse intense sous un glaçage brillant.","portions":6,"diff":3,"prep":90,"rest":240,"cook":15,"temp":170,"shape":"slab","top":"miroir","layers":[{"t":"biscuit_choc","h":16},{"t":"croq_noisette","h":12},{"t":"mousse_choc","h":42}],
+"comps":[{"n":"Biscuit chocolat","i":[["œufs",3,""],["sucre",90,"g"],["chocolat noir",100,"g"],["beurre",60,"g"],["farine",20,"g"]]},{"n":"Croustillant noisette","i":[["praliné noisette",100,"g"],["chocolat au lait",40,"g"],["crêpes dentelle émiettées",60,"g"]]},{"n":"Mousse au chocolat","i":[["chocolat noir",200,"g"],["crème liquide chaude",100,"ml"],["crème liquide montée",250,"ml"]]},{"n":"Glaçage","i":[["chocolat noir",100,"g"],["crème liquide",100,"ml"]]}],
+"steps":["Biscuit : fondre chocolat et beurre, ajouter les jaunes et la farine, incorporer les blancs montés avec le sucre. Cuire 12 à 15 min à 170 °C.","Croustillant : mélanger praliné et chocolat fondus avec les crêpes dentelle, étaler sur le biscuit et placer au froid.","Mousse : verser la crème chaude sur le chocolat, lisser, puis incorporer la crème montée. Couler sur le croustillant.","Laisser prendre au congélateur 4 h, puis glacer avec crème chaude et chocolat lissés."]},
+{"slug":"passion-vanille","name":"Passion Vanille","cat":"originale","s":["passion","vanille"],"desc":"Un sablé, un insert vif au fruit de la passion et une crème diplomate à la vanille.","portions":6,"diff":2,"prep":75,"rest":180,"cook":18,"temp":170,"shape":"slab","top":"fruits","layers":[{"t":"sable","h":14},{"t":"insert_passion","h":12},{"t":"creme_vanille","h":44}],
+"comps":[{"n":"Sablé","i":[["farine",150,"g"],["beurre",100,"g"],["sucre",60,"g"],["jaunes d'œufs",2,""],["levure chimique",4,"g"]]},{"n":"Insert passion","i":[["purée de fruit de la passion",100,"g"],["sucre",30,"g"],["gélatine en feuilles",4,"g"]]},{"n":"Crème diplomate vanille","i":[["lait",400,"ml"],["jaunes d'œufs",3,""],["sucre",80,"g"],["fécule de maïs",30,"g"],["gousse de vanille",1,""],["crème liquide montée",200,"ml"]]}],
+"steps":["Sablé : mélanger les ingrédients, étaler à 5 mm et cuire 18 min à 170 °C. Détailler en cercle.","Insert : chauffer purée et sucre, ajouter la gélatine ramollie, couler et congeler.","Crème : cuire la crème pâtissière à la vanille, la refroidir, puis incorporer la crème montée.","Monter sur le sablé : insert, puis crème. Laisser prendre 3 h au frais et décorer de fruits."]}
+]}
+</script>
 <dialog id="dlg">
 <div class="tabs"><button class="on" data-tab="login">Connexion</button><button data-tab="signup">Inscription</button></div>
 <form id="form">
@@ -329,31 +442,140 @@ yaourt:{n:'Gâteau au yaourt',l:1,m:45,s:['vanille','citron'],t:['moelleux'],y:'
 eclair:{n:'Éclair au yuzu',l:3,m:120,s:['citron'],t:['crémeux','croustillant'],y:'revisité',a:['gluten','oeufs','lait']},
 tarte:{n:'Tarte citron déstructurée',l:3,m:180,s:['citron'],t:['crémeux','croustillant','aérien'],y:'revisité',a:['gluten','oeufs','lait']}};
 let step=0,ans={};
+const LAB={lvl:'Niveau',time:'Temps',sav:'Saveur',tex:'Texture',sty:'Style',all:'Contraintes'};
+const ICO={
+lvl:'<svg viewBox="0 0 24 24"><path d="M4 20h4v-5H4zM10 20h4V10h-4zM16 20h4V4h-4z"/></svg>',
+time:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>',
+sav:'<svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/></svg>',
+tex:'<svg viewBox="0 0 24 24"><path d="M3 8l9-4 9 4-9 4zM3 12l9 4 9-4M3 16l9 4 9-4"/></svg>',
+sty:'<svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg>',
+all:'<svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>'};
+const bar=n=>`<div class="bar">${Q.map((_,i)=>`<i class="${i<n?'d':''}"></i>`).join('')}</div>`;
+function restart(){step=0;ans={};renderQ();}
 function renderQ(){const b=$('#stbox');if(step>=Q.length)return renderRes();const q=Q[step];
-b.innerHTML='<p class="eyebrow" style="color:#E2BE8A">Question '+(step+1)+' sur '+Q.length+'</p><h3 class="stq">'+q.q+'</h3><div class="opts">'+q.o.map((o,i)=>'<button class="opt" data-i="'+i+'"><span class="ic">'+IC[q.k][i]+'</span><span>'+o[0]+'</span></button>').join('')+'</div>'+(step?'<button class="back" id="stback">← Retour</button>':'');
+b.innerHTML=`${bar(step)}<div class="sh"><span class="si">${ICO[q.k]}</span><span>Étape ${step+1} sur ${Q.length} · ${LAB[q.k]}</span></div><h3 class="stq">${q.q}</h3><div class="opts">${q.o.map((o,i)=>`<button class="opt${(q.k in ans&&ans[q.k]===o[1])?' on':''}" data-i="${i}"><span class="rd"></span><span>${o[0]}</span></button>`).join('')}</div>${step?'<button class="back" id="stback">← Précédent</button>':''}`;
 b.querySelectorAll('.opt').forEach(x=>x.onclick=()=>{ans[q.k]=q.o[+x.dataset.i][1];step++;renderQ();});
 if(step)$('#stback').onclick=()=>{step--;renderQ();};}
 function renderRes(){const b=$('#stbox');const ok=Object.keys(M).filter(k=>!ans.all||!M[k].a.includes(ans.all));
-const again='<button class="btn o" id="stre">Recommencer</button>';
-if(!ok.length){b.innerHTML='<div class="res"><h3 class="stq">Aucune recette du catalogue ne convient</h3><p>Les 4 recettes d\'exemple contiennent toutes du gluten, des œufs et des produits laitiers. Ta bibliothèque vérifiée pourra proposer des versions adaptées.</p><p style="margin-top:20px">'+again+'</p></div>';$('#stre').onclick=()=>{step=0;ans={};renderQ();};return;}
+if(!ok.length){b.innerHTML=`${bar(Q.length)}<h3 class="stq">Aucune recette du catalogue ne convient</h3><p class="rmeta">Les 4 recettes d'exemple contiennent toutes du gluten, des œufs et des produits laitiers. Ta bibliothèque vérifiée pourra proposer des versions adaptées.</p><div class="act"><button class="btn bs" id="stre">Recommencer</button></div>`;$('#stre').onclick=restart;return;}
 const rank=ok.map(k=>{const m=M[k],fit=m.l<=ans.lvl&&m.m<=ans.time,sv=ans.sav&&m.s.includes(ans.sav),tx=m.t.includes(ans.tex),st=ans.sty&&m.y==ans.sty;return{k,fit,sv,tx,st,sc:(fit?3:0)+(sv?2:0)+(tx?2:0)+(st?1:0)};}).sort((a,c)=>c.sc-a.sc);
 const t=rank[0],m=M[t.k],why=[];
-if(t.fit)why.push('adaptée à ton niveau et à ton temps disponible');else why.push('elle demande un peu plus de niveau ou de temps que ce que tu as indiqué');
-if(t.sv)why.push('saveur : '+ans.sav);if(t.tx)why.push('texture : '+ans.tex);if(t.st)why.push('style : '+ans.sty);
-const alt=rank[1]?'<p style="margin-top:16px;color:#E9D9C0">Autre idée : '+M[rank[1].k].n+'</p>':'';
-b.innerHTML='<div class="res"><div class="rph ph-'+t.k+'"></div><p class="eyebrow" style="color:#E2BE8A">Ma proposition</p><h3 class="stq">'+m.n+'</h3><p>'+R[t.k].m+'</p><ul>'+why.map(w=>'<li>'+w+'</li>').join('')+'</ul><p style="color:#E9D9C0;font-size:14px;margin-bottom:20px">Recette d\'exemple, non validée : à remplacer par ta bibliothèque vérifiée.</p><button class="btn" id="stpdf">Fiche mémo PDF</button>'+again+alt+'</div>';
+why.push(t.fit?'Adaptée à ton niveau et à ton temps disponible':'Demande un peu plus de niveau ou de temps que prévu');
+if(t.sv)why.push('Saveur : '+ans.sav);if(t.tx)why.push('Texture : '+ans.tex);if(t.st)why.push('Style : '+ans.sty);
+const chips=Q.map(q=>{const o=q.o.find(o=>o[1]===ans[q.k]);return o?`<span>${LAB[q.k]} : ${o[0]}</span>`:'';}).join('');
+const alt=rank[1]?`<p class="rmeta" style="margin-top:20px">Autre idée : ${M[rank[1].k].n}</p>`:'';
+b.innerHTML=`${bar(Q.length)}<div class="rtop"><span class="badge">Proposition · recette d'exemple non validée</span></div><div class="rph ph-${t.k}"></div><h3 class="stq" style="margin-top:0">${m.n}</h3><p class="rmeta">${R[t.k].m}</p><p class="rl">Pourquoi cette proposition</p><ul class="chk">${why.map(w=>`<li>${w}</li>`).join('')}</ul><p class="rl">Tes choix</p><div class="chips" style="margin-top:0">${chips}</div><div class="act"><button class="btn bp" id="stpdf">Fiche mémo PDF</button><button class="btn bs" id="stre">Recommencer</button></div>${alt}`;
 $('#stpdf').onclick=()=>document.querySelector('#recettes [data-sheet="'+t.k+'"]').click();
-$('#stre').onclick=()=>{step=0;ans={};renderQ();};}
-const _ic=1;
-const IC={lvl:['🌱','🥄','👩‍🍳'],time:['⚡','⏳','🕰️'],sav:['🍫','🍋','🍦','✨'],tex:['🧁','🍮','🍪','☁️'],sty:['🥐','🎨','✨'],all:['✅','🌾','🥚','🥛']};
-function show(v){if(!['home','studio','fiches'].includes(v))v='home';document.querySelectorAll('.v').forEach(e=>e.classList.toggle('on',e.classList.contains('v-'+v)));window.scrollTo(0,0);}
-window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+$('#stre').onclick=restart;}
+
+const PAL={
+sable:{k:'base',n:'Pâte sablée',c:'#D8A25E',tx:'pores'},sucree:{k:'base',n:'Pâte sucrée',c:'#DDAE6C',tx:'pores'},
+choux:{k:'base',n:'Pâte à choux',c:'#D9A35A',tx:'air'},genoise:{k:'base',n:'Biscuit génoise',c:'#EBCB8E',tx:'pores'},
+biscuit_choc:{k:'base',n:'Biscuit chocolat',c:'#5B3A28',tx:'pores'},
+creme_vanille:{k:'creme',n:'Crème vanille',c:'#F6EBCF'},creme_citron:{k:'creme',n:'Crème citron',c:'#F1D75C'},
+creme_yuzu:{k:'creme',n:'Crème yuzu',c:'#EFE08C'},creme_choc:{k:'creme',n:'Crème au chocolat',c:'#5A3322'},
+creme_pistache:{k:'creme',n:'Crème pistache',c:'#B4C384'},creme_praline:{k:'creme',n:'Crème praliné',c:'#C59A68'},
+mousse_choc:{k:'mousse',n:'Mousse chocolat',c:'#7A4B35',tx:'air'},
+insert_fram:{k:'insert',n:'Insert framboise',c:'#B3304A'},insert_passion:{k:'insert',n:'Insert passion',c:'#F2A22E'},
+croq_noisette:{k:'croq',n:'Croustillant noisette',c:'#B98652',tx:'crunch'}};
+const TOPS={miroir:'Glaçage brillant',meringue:'Meringue',fruits:'Fruits frais',noisette:'Éclats de noisette',pistache:'Pistaches concassées',poudre:'Cacao en poudre',none:'Sans finition'};
+const KL={base:'Base',creme:'Crème',mousse:'Mousse',insert:'Insert',croq:'Croustillant'};
+const CATS={classique:'Les Classiques',revisitee:'Les Revisitées',originale:'Créations originales'};
+let P=[],cat='all',uid=0,curUser=null,favs=new Set(),favOK=true,cp=null,portions=6,at=null;
+const hash=s=>{let h=2166136261;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return h>>>0;};
+const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};
+const shade=(h,f)=>{const n=parseInt(h.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const t=f<0?0:255,p=Math.abs(f);return`rgb(${Math.round((t-r)*p+r)},${Math.round((t-g)*p+g)},${Math.round((t-b)*p+b)})`;};
+const norm=s=>String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+function svg(p,L,top){L=L||p.layers;top=top||p.top;const id='s'+(++uid),r=rng(hash(p.slug)),W=176,X=32,B=164;
+let y=B,defs='',lay='',tex='';const used={};
+const pcs=L.map(l=>{y-=l.h;return{y,h:l.h,t:l.t};});const topY=y;
+pcs.forEach(c=>{const pl=PAL[c.t]||{c:'#ccc'},col=pl.c;
+if(!used[c.t]){used[c.t]=1;defs+=`<linearGradient id="${id}${c.t}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${shade(col,.18)}"/><stop offset=".5" stop-color="${col}"/><stop offset="1" stop-color="${shade(col,-.14)}"/></linearGradient>`;}
+lay+=`<rect x="${X}" y="${c.y}" width="${W}" height="${c.h}" fill="url(#${id}${c.t})"/><line x1="${X}" x2="${X+W}" y1="${c.y}" y2="${c.y}" stroke="#fff" stroke-opacity=".3"/>`;
+const n=pl.tx?Math.round(W*c.h/(pl.tx=='air'?420:200)):0;
+for(let i=0;i<n;i++){const cx=X+4+r()*(W-8),cy=c.y+2+r()*(c.h-4);
+if(pl.tx=='air')tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${2+r()*4}" ry="${1.5+r()*2.5}" fill="${shade(col,-.35)}" opacity=".28"/>`;
+else if(pl.tx=='crunch')tex+=`<circle cx="${cx}" cy="${cy}" r="${1+r()*1.8}" fill="${r()>.5?shade(col,-.4):shade(col,.4)}" opacity=".7"/>`;
+else tex+=`<ellipse cx="${cx}" cy="${cy}" rx="${1+r()*1.6}" ry="${.7+r()}" fill="${shade(col,-.3)}" opacity=".35"/>`;}});
+let d;const sh=p.shape;
+if(sh=='tarte')d=`M${X+7} ${B}L${X+W-7} ${B}L${X+W} ${topY}L${X} ${topY}Z`;
+else if(sh=='dome')d=`M${X} ${B}L${X} ${topY+16}Q${X} ${topY} ${X+22} ${topY}L${X+W-22} ${topY}Q${X+W} ${topY} ${X+W} ${topY+16}L${X+W} ${B}Z`;
+else d=`M${X+4} ${B}L${X+W-4} ${B}L${X+W} ${topY+6}Q${X+W} ${topY} ${X+W-6} ${topY}L${X+6} ${topY}Q${X} ${topY} ${X} ${topY+6}Z`;
+let tp='';const tc=p.tc||'#2E1810';
+if(top=='miroir')tp=`<path d="M${X} ${topY+8}Q${X} ${topY-9} ${X+16} ${topY-9}L${X+W-16} ${topY-9}Q${X+W} ${topY-9} ${X+W} ${topY+8}Z" fill="${tc}"/><rect x="${X+16}" y="${topY-6}" width="${W*.42}" height="2.4" rx="1.2" fill="#fff" opacity=".38"/>`;
+else if(top=='meringue'){for(let i=0;i<5;i++){const x0=X-4+i*(W/5),w=W/5+8,h=22+r()*10;tp+=`<path d="M${x0} ${topY}Q${x0+w*.25} ${topY-6} ${x0+w*.5} ${topY-h}Q${x0+w*.75} ${topY-6} ${x0+w} ${topY}Z" fill="#FBF5E8" stroke="#E7D3AA" stroke-width=".8"/><path d="M${x0+w*.4} ${topY-h+6}Q${x0+w*.5} ${topY-h-1} ${x0+w*.55} ${topY-h+8}" stroke="#D9AE63" stroke-width="2" fill="none" stroke-linecap="round"/>`;}}
+else if(top=='fruits'){for(let i=0;i<4;i++){const cx=X+22+i*(W-44)/3;tp+=`<ellipse cx="${cx}" cy="${topY-5}" rx="8" ry="8" fill="#B0213C"/><ellipse cx="${cx-2.5}" cy="${topY-7.5}" rx="2.4" ry="1.5" fill="#fff" opacity=".45"/>`;}}
+else if(top=='noisette'||top=='pistache'){const c=top=='pistache'?['#8DA553','#A9BF72']:['#9A6A3B','#C08A52'];for(let i=0;i<22;i++)tp+=`<ellipse cx="${X+6+r()*(W-12)}" cy="${topY-1-r()*5}" rx="${2+r()*2.2}" ry="${1.4+r()*1.4}" fill="${c[i%2]}"/>`;}
+else if(top=='poudre')tp=`<rect x="${X+2}" y="${topY-3}" width="${W-4}" height="3.5" rx="1.5" fill="#4B2C1D" opacity=".6"/>`;
+return`<svg viewBox="0 54 240 136" role="img" aria-label="Coupe : ${p.name}"><defs>${defs}<clipPath id="${id}c"><path d="${d}"/></clipPath></defs><ellipse cx="${X+W/2}" cy="${B+9}" rx="${W/2+16}" ry="5" fill="#3A2419" opacity=".1"/><rect x="${X-12}" y="${B}" width="${W+24}" height="6" rx="3" fill="#fff"/><g clip-path="url(#${id}c)">${lay}${tex}</g><path d="${d}" fill="none" stroke="#3A2419" stroke-opacity=".16"/>${tp}</svg>`;}
+const hay=p=>norm([p.name,p.s.join(' '),p.comps.map(c=>c.n+' '+c.i.map(x=>x[0]).join(' ')).join(' ')].join(' '));
+function renderColl(){const q=norm(($('#cq')||{}).value||'');
+const it=P.filter(p=>(cat=='all'||p.cat==cat)&&(!q||hay(p).includes(q)));
+$('#cgrid').innerHTML=it.map(p=>`<a class="ci" href="#collection/${p.slug}"><div class="cv">${svg(p)}</div><h3>${p.name}</h3></a>`).join('')||'<p class="cnone">Aucune pâtisserie ne correspond.</p>';}
+function initColl(){
+$('#ctabs').innerHTML=[['all','Toutes'],...Object.entries(CATS)].map(([k,v])=>`<button data-c="${k}" class="${k==cat?'on':''}">${v}</button>`).join('');
+$('#ctabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;$('#ctabs').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x==b));renderColl();};
+$('#cq').oninput=renderColl;renderColl();}
+const fq=(q,u)=>{if(u=='g'||u=='ml')return String(Math.round(q));const v=Math.round(q*2)/2;return String(v).replace('.',',');};
+const fmt=m=>m>=60?Math.floor(m/60)+' h'+(m%60?' '+m%60:''):m+' min';
+function listComp(p,L,top){return[...(top&&top!='none'?[TOPS[top]]:[]),...[...L].reverse().map(l=>PAL[l.t].n)];}
+const de=n=>/^[aeiouhéèêœ]/i.test(n)?"d'"+n:'de '+n;
+function ingLine(x,f){const q=x[1]*f,u=x[2],n=x[0],v=fq(q,u);
+if(u=='g'||u=='ml')return`${v} ${u} ${de(n)}`;
+if(u=='pincée')return`${v} pincée${q>1?'s':''} de ${n}`;
+if(u=='citrons')return`zeste de ${v} citron${q>1?'s':''}`;
+return`${v} ${n=='œuf'&&q!=1?'œufs':n}`;}
+function ingHTML(){const f=portions/cp.portions;return cp.comps.map(c=>`<h4>${c.n}</h4><ul class="il">${c.i.map(x=>`<li><label><input type="checkbox" class="ck"><span>${ingLine(x,f)}</span></label></li>`).join('')}</ul>`).join('');}
+function openFiche(slug){const p=P.find(x=>x.slug==slug);if(!p){location.hash='collection';return;}cp=p;portions=p.portions;
+const f=$('#fiche');f.hidden=false;f.classList.remove('cook');f.scrollTop=0;
+f.innerHTML=`<div class="fi"><div class="ftop"><a href="#collection">← Collection</a><button id="fav" aria-label="Favori"></button></div>
+<div class="fsv">${svg(p)}</div><p class="eyebrow" style="text-align:center">${CATS[p.cat]}</p><h1 class="fh">${p.name}</h1>
+<p class="fmeta">Difficulté ${'●'.repeat(p.diff)}${'○'.repeat(3-p.diff)} · Préparation ${fmt(p.prep)} · Repos ${fmt(p.rest)} · Cuisson ${fmt(p.cook)} à ${p.temp} °C</p>
+<p class="fdemo">Recette de démonstration, non validée</p><p class="fdesc">${p.desc}</p>
+<div class="fcols"><div><h2 class="fh2">Composition</h2><ol class="comp">${listComp(p,p.layers,p.top).map(x=>`<li>${x}</li>`).join('')}</ol></div>
+<div><h2 class="fh2">Portions</h2><div class="step"><button id="pm" aria-label="Moins">−</button><b id="pn">${portions}</b><button id="pp" aria-label="Plus">+</button></div><p class="fnote">Les quantités s'adaptent automatiquement. Les œufs sont arrondis à la demi-unité.</p></div></div>
+<h2 class="fh2">Ingrédients</h2><div id="ing">${ingHTML()}</div>
+<h2 class="fh2">Préparation</h2><ol class="st2">${p.steps.map(s=>`<li><label><input type="checkbox" class="ck"><span>${s}</span></label></li>`).join('')}</ol>
+<div class="fact"><button class="btn bp" id="cook">Réaliser cette recette</button><a class="btn bs" href="#atelier/${p.slug}">Personnaliser cette création</a><button class="btn bs" id="fpdf">Fiche PDF</button></div></div>`;
+const upd=d=>{portions=Math.max(1,Math.min(30,portions+d));$('#pn').textContent=portions;$('#ing').innerHTML=ingHTML();};
+$('#pm').onclick=()=>upd(-1);$('#pp').onclick=()=>upd(1);
+$('#cook').onclick=()=>{const c=f.classList.toggle('cook');$('#cook').textContent=c?'Quitter le mode réalisation':'Réaliser cette recette';if(c)$('#ing').scrollIntoView({behavior:'smooth'});};
+$('#fpdf').onclick=()=>sheetFor(p.name,`${CATS[p.cat]} · ${portions} portions · Cuisson ${fmt(p.cook)} à ${p.temp} °C`,`<div class="cols"><div><h2>Ingrédients</h2>${ingHTML().replace(/<label>|<\/label>|<input[^>]*>/g,'')}</div><div><h2>Préparation</h2><ol>${p.steps.map(s=>`<li>${s}</li>`).join('')}</ol></div></div><div class="tip"><b>Recette de démonstration, non validée.</b></div>`);
+$('#fav').onclick=()=>toggleFav(p.slug);paintFav();}
+function paintFav(){const b=$('#fav');if(!b||!cp)return;const on=favs.has(cp.slug);b.textContent=on?'♥':'♡';b.classList.toggle('on',on);}
+async function toggleFav(slug){if(!sb||!curUser){$('#msg').textContent='';setMode('login');dlg.showModal();$('#msg').textContent='Connecte-toi pour enregistrer tes favoris.';return;}
+const on=favs.has(slug);const q=on?sb.from('favorites').delete().eq('user_id',curUser.id).eq('pastry_slug',slug):sb.from('favorites').upsert({user_id:curUser.id,pastry_slug:slug});
+const {error}=await q;if(error){alert("Les favoris ne sont pas encore activés : la table n'existe pas dans Supabase (fichier schema_favoris.sql à lancer).");return;}
+on?favs.delete(slug):favs.add(slug);paintFav();}
+async function loadFavs(){favs=new Set();if(sb&&curUser){const {data,error}=await sb.from('favorites').select('pastry_slug');if(!error&&data)data.forEach(d=>favs.add(d.pastry_slug));}paintFav();}
+function closeFiche(){const f=$('#fiche');if(f)f.hidden=true;}
+function sheetFor(t,m,body){$('#sheet').innerHTML=`<div class="ft" style="margin:0 0 8px">Pâtissio · Fiche technique</div><h1>${t}</h1><div class="meta">${m}</div>${body}<div class="ft">Pâtissio</div>`;window.print();}
+function check(p,L,top){const m=[];L.forEach((l,i)=>{const o=p.layers[i];if(o.t!=l.t&&PAL[l.t].k=='base'&&((o.t=='choux')!=(l.t=='choux')))m.push('Remplacer une pâte à choux par une pâte sablée ou sucrée (ou l\'inverse) change la structure : le montage devra être revu.');});
+if(top=='miroir'&&p.shape=='tarte')m.push('Un glaçage brillant se pose sur un entremets froid ou congelé : sur une tarte, le montage doit être repensé.');
+if(top=='meringue'&&L.some(l=>PAL[l.t].k=='mousse'))m.push('Une meringue sur une mousse peut ramollir : à servir rapidement.');return[...new Set(m)];}
+function openAtelier(slug){const p=P.find(x=>x.slug==slug);if(!p){location.hash='collection';return;}at={p,L:p.layers.map(l=>({...l})),top:p.top};
+const lay=[...at.L.keys()].reverse().filter(i=>!at.L[i].lock);
+$('#atbox').innerHTML=`<a class="back2" href="#collection/${p.slug}">← Retour à la fiche</a><p class="eyebrow">Atelier de personnalisation</p><h2 class="fh" style="text-align:left">${p.name}</h2>
+<div class="atg"><div class="atv" id="atsvg">${svg(p)}</div><div><p class="fnote" style="margin-bottom:16px">La structure de la pâtisserie est chargée. Change un élément : le visuel se met à jour.</p>
+<label class="al">Finition<select id="atop">${Object.entries(TOPS).map(([k,v])=>`<option value="${k}" ${k==at.top?'selected':''}>${v}</option>`).join('')}</select></label>
+${lay.map(i=>`<label class="al">${KL[PAL[at.L[i].t].k]}<select data-i="${i}">${Object.keys(PAL).filter(k=>PAL[k].k==PAL[at.L[i].t].k).map(k=>`<option value="${k}" ${k==at.L[i].t?'selected':''}>${PAL[k].n}</option>`).join('')}</select></label>`).join('')}</div></div><div id="atres"></div>`;
+const upd=()=>{$('#atsvg').innerHTML=svg(at.p,at.L,at.top);const diff=[];at.L.forEach((l,i)=>{if(l.t!=at.p.layers[i].t)diff.push(`${PAL[at.p.layers[i].t].n} → ${PAL[l.t].n}`);});if(at.top!=at.p.top)diff.push(`${TOPS[at.p.top]} → ${TOPS[at.top]}`);
+const w=check(at.p,at.L,at.top);
+$('#atres').innerHTML=diff.length?`<div class="atc"><span class="badge">Expérimentale · non testée</span><h3 class="fh3">Ma version de ${at.p.name}</h3><p class="rl">Modifications</p><ul class="chk">${diff.map(x=>`<li>${x}</li>`).join('')}</ul>${w.length?`<p class="rl">Points d'attention</p><ul class="warn">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}<p class="fnote">Non encore développé : le recalcul des quantités pour les préparations modifiées et les vérifications techniques complètes. Ils arriveront avec ta bibliothèque de préparations vérifiées.</p><div class="act"><button class="btn bp" id="atpdf">Fiche de ma version</button></div></div>`:`<p class="fnote" style="margin-top:32px">Modifie un élément pour créer ta version.</p>`;
+const b=$('#atpdf');if(b)b.onclick=()=>sheetFor(at.p.name+' · ma version','Création expérimentale, non testée',`<div class="cols"><div><h2>Composition</h2><ol>${listComp(at.p,at.L,at.top).map(x=>`<li>${x}</li>`).join('')}</ol></div><div><h2>Modifications</h2><ul>${diff.map(x=>`<li>${x}</li>`).join('')}</ul></div></div><div class="tip"><b>Version non testée.</b> Les quantités des préparations modifiées ne sont pas calculées : ${w.join(' ')||'aucun point d\'attention détecté, mais aucune vérification complète n\'est encore disponible.'}</div>`);};
+$('#atbox').querySelectorAll('select[data-i]').forEach(s=>s.onchange=()=>{at.L[+s.dataset.i].t=s.value;upd();});$('#atop').onchange=e=>{at.top=e.target.value;upd();};upd();}
+function route(){const [v,slug]=location.hash.slice(1).split('/');const view=['home','studio','fiches','collection','atelier'].includes(v)?v:'home';show(view);closeFiche();if(view=='collection'&&slug)openFiche(slug);if(view=='atelier'){if(slug)openAtelier(slug);else location.hash='collection';}}
+
+P=JSON.parse(document.getElementById('pdata').textContent).items;
+function show(v){if(!['home','studio','fiches','collection','atelier'].includes(v))v='home';document.querySelectorAll('.v').forEach(e=>e.classList.toggle('on',e.classList.contains('v-'+v)));window.scrollTo(0,0);}
+window.addEventListener('hashchange',route);
 const mn=document.getElementById('menu');
 function openMenu(o){mn.hidden=!o;}
 document.getElementById('menubtn').onclick=()=>openMenu(true);
 document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g&&g.tagName!='A')location.hash=g.dataset.go;
 if(e.target.closest('#menu [data-close],#menu [data-go],#menu [data-auth]'))openMenu(false);});
-show(location.hash.slice(1));
+initColl();route();fetch('pastries.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{if(d&&Array.isArray(d.items)&&d.items.length){P=d.items;renderColl();route();}}).catch(()=>{});
+if(sb)sb.auth.onAuthStateChange((_e,s)=>{curUser=s?s.user:null;loadFavs();});
 ['hero','cookies','yaourt','eclair','tarte'].forEach(k=>{const i=new Image();i.onload=()=>document.documentElement.classList.add('has-'+k);i.src='photo-'+k+'.jpg';});
 renderQ();
 </script>
